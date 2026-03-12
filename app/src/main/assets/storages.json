@@ -1,0 +1,510 @@
+[
+    {
+        "id": 1,
+        "name": "Kingston NV2 500GB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Kingston",
+        "type": "M2_NVME",
+        "capacityGb": 500,
+        "readSpeedMbps": 3500,
+        "writeSpeedMbps": 2100,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB"
+        ],
+        "price": 1695.0,
+        "imageUrls": []
+    },
+    {
+        "id": 2,
+        "name": "Lexar NM710 500GB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Lexar",
+        "type": "M2_NVME",
+        "capacityGb": 500,
+        "readSpeedMbps": 5000,
+        "writeSpeedMbps": 2600,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB"
+        ],
+        "price": 1795.0,
+        "imageUrls": []
+    },
+    {
+        "id": 3,
+        "name": "Crucial P3 500GB PCIe Gen3 NVMe M.2 2280 SSD",
+        "brand": "Crucial",
+        "type": "M2_NVME",
+        "capacityGb": 500,
+        "readSpeedMbps": 3500,
+        "writeSpeedMbps": 1900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 1595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 4,
+        "name": "WD Blue SN580 500GB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 500,
+        "readSpeedMbps": 4000,
+        "writeSpeedMbps": 3600,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB"
+        ],
+        "price": 1895.0,
+        "imageUrls": []
+    },
+    {
+        "id": 5,
+        "name": "Samsung 980 PRO 500GB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Samsung",
+        "type": "M2_NVME",
+        "capacityGb": 500,
+        "readSpeedMbps": 6900,
+        "writeSpeedMbps": 5000,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB"
+        ],
+        "price": 2995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 6,
+        "name": "TeamGroup MP44L 500GB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "TeamGroup",
+        "type": "M2_NVME",
+        "capacityGb": 500,
+        "readSpeedMbps": 5000,
+        "writeSpeedMbps": 3500,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB"
+        ],
+        "price": 1595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 7,
+        "name": "Kingston NV2 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Kingston",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 3500,
+        "writeSpeedMbps": 2100,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB"
+        ],
+        "price": 2695.0,
+        "imageUrls": []
+    },
+    {
+        "id": 8,
+        "name": "Lexar NM790 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Lexar",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 7400,
+        "writeSpeedMbps": 6500,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 3495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 9,
+        "name": "Crucial P3 Plus 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Crucial",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 5000,
+        "writeSpeedMbps": 4200,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 2895.0,
+        "imageUrls": []
+    },
+    {
+        "id": 10,
+        "name": "WD Blue SN5000 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 5150,
+        "writeSpeedMbps": 4900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB"
+        ],
+        "price": 3295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 11,
+        "name": "Samsung 990 EVO Plus 1TB PCIe Gen5 NVMe M.2 2280 SSD",
+        "brand": "Samsung",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 7250,
+        "writeSpeedMbps": 6300,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 4995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 12,
+        "name": "Kingston KC3000 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Kingston",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 7000,
+        "writeSpeedMbps": 6000,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 3795.0,
+        "imageUrls": []
+    },
+    {
+        "id": 13,
+        "name": "TeamGroup MP44 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "TeamGroup",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 7400,
+        "writeSpeedMbps": 6900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB"
+        ],
+        "price": 3095.0,
+        "imageUrls": []
+    },
+    {
+        "id": 14,
+        "name": "WD BLACK SN850X 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 7300,
+        "writeSpeedMbps": 6300,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 4495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 15,
+        "name": "Samsung 990 PRO 1TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Samsung",
+        "type": "M2_NVME",
+        "capacityGb": 1000,
+        "readSpeedMbps": 7450,
+        "writeSpeedMbps": 6900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 5495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 16,
+        "name": "Lexar NM790 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Lexar",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 7400,
+        "writeSpeedMbps": 6500,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 5895.0,
+        "imageUrls": []
+    },
+    {
+        "id": 17,
+        "name": "Crucial P3 Plus 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Crucial",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 5000,
+        "writeSpeedMbps": 4200,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "500GB",
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 5295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 18,
+        "name": "WD Blue SN5000 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 5150,
+        "writeSpeedMbps": 4900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB"
+        ],
+        "price": 5995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 19,
+        "name": "Samsung 990 EVO Plus 2TB PCIe Gen5 NVMe M.2 2280 SSD",
+        "brand": "Samsung",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 7250,
+        "writeSpeedMbps": 6300,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 8495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 20,
+        "name": "Kingston KC3000 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Kingston",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 7000,
+        "writeSpeedMbps": 7000,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 7295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 21,
+        "name": "WD BLACK SN850X 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 7300,
+        "writeSpeedMbps": 6600,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 8995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 22,
+        "name": "Samsung 990 PRO 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Samsung",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 7450,
+        "writeSpeedMbps": 6900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 9995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 23,
+        "name": "TeamGroup MP44 2TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "TeamGroup",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 7400,
+        "writeSpeedMbps": 6900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB"
+        ],
+        "price": 5495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 24,
+        "name": "WD BLACK SN8100 2TB PCIe Gen5 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 2000,
+        "readSpeedMbps": 14500,
+        "writeSpeedMbps": 12200,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 11995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 25,
+        "name": "Crucial T500 4TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Crucial",
+        "type": "M2_NVME",
+        "capacityGb": 4000,
+        "readSpeedMbps": 7100,
+        "writeSpeedMbps": 6800,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 14995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 26,
+        "name": "Samsung 990 PRO 4TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Samsung",
+        "type": "M2_NVME",
+        "capacityGb": 4000,
+        "readSpeedMbps": 7450,
+        "writeSpeedMbps": 6900,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 19995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 27,
+        "name": "WD BLACK SN850X 4TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 4000,
+        "readSpeedMbps": 7300,
+        "writeSpeedMbps": 6600,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 18995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 28,
+        "name": "Kingston KC3000 4TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Kingston",
+        "type": "M2_NVME",
+        "capacityGb": 4000,
+        "readSpeedMbps": 7000,
+        "writeSpeedMbps": 7000,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 16995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 29,
+        "name": "WD BLACK SN8100 4TB PCIe Gen5 NVMe M.2 2280 SSD",
+        "brand": "Western Digital",
+        "type": "M2_NVME",
+        "capacityGb": 4000,
+        "readSpeedMbps": 14500,
+        "writeSpeedMbps": 12200,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 24995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 30,
+        "name": "Lexar NM790 4TB PCIe Gen4 NVMe M.2 2280 SSD",
+        "brand": "Lexar",
+        "type": "M2_NVME",
+        "capacityGb": 4000,
+        "readSpeedMbps": 7400,
+        "writeSpeedMbps": 6500,
+        "formFactor": "M.2 2280",
+        "capacityVariants": [
+            "1TB",
+            "2TB",
+            "4TB"
+        ],
+        "price": 13995.0,
+        "imageUrls": []
+    }
+]

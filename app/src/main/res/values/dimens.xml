@@ -1,0 +1,23 @@
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_xxxl">32dp</dimen>
+
+    <!-- Card corners -->
+    <dimen name="corner_sm">8dp</dimen>
+    <dimen name="corner_md">12dp</dimen>
+    <dimen name="corner_lg">16dp</dimen>
+    <dimen name="corner_xl">20dp</dimen>
+
+    <!-- Component sizes -->
+    <dimen name="step_indicator_size">40dp</dimen>
+    <dimen name="image_placeholder_size">100dp</dimen>
+    <dimen name="game_image_size">72dp</dimen>
+    <dimen name="synergy_circle_size">120dp</dimen>
+    <dimen name="toolbar_icon_size">24dp</dimen>
+</resources>

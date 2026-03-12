@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "name": "Noctua NH-D15",
+        "brand": "Noctua",
+        "type": "AIR",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 165,
+        "radiatorSizeMm": 0,
+        "fanSizeMm": 140,
+        "tdpRating": 250,
+        "price": 5490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 2,
+        "name": "DeepCool AK620",
+        "brand": "DeepCool",
+        "type": "AIR",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 160,
+        "radiatorSizeMm": 0,
+        "fanSizeMm": 120,
+        "tdpRating": 260,
+        "price": 3290.0,
+        "imageUrls": []
+    },
+    {
+        "id": 3,
+        "name": "ID-COOLING SE-226-XT",
+        "brand": "ID-COOLING",
+        "type": "AIR",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700"
+        ],
+        "heightMm": 155,
+        "radiatorSizeMm": 0,
+        "fanSizeMm": 120,
+        "tdpRating": 230,
+        "price": 1890.0,
+        "imageUrls": []
+    },
+    {
+        "id": 4,
+        "name": "Cooler Master Hyper 212",
+        "brand": "Cooler Master",
+        "type": "AIR",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 158,
+        "radiatorSizeMm": 0,
+        "fanSizeMm": 120,
+        "tdpRating": 150,
+        "price": 2190.0,
+        "imageUrls": []
+    },
+    {
+        "id": 5,
+        "name": "NZXT Kraken X63 280mm AIO",
+        "brand": "NZXT",
+        "type": "AIO",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 0,
+        "radiatorSizeMm": 280,
+        "fanSizeMm": 140,
+        "tdpRating": 300,
+        "price": 7490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 6,
+        "name": "Corsair iCUE H150i Elite 360mm AIO",
+        "brand": "Corsair",
+        "type": "AIO",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 0,
+        "radiatorSizeMm": 360,
+        "fanSizeMm": 120,
+        "tdpRating": 350,
+        "price": 9990.0,
+        "imageUrls": []
+    },
+    {
+        "id": 7,
+        "name": "Arctic Liquid Freezer II 240mm AIO",
+        "brand": "Arctic",
+        "type": "AIO",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 0,
+        "radiatorSizeMm": 240,
+        "fanSizeMm": 120,
+        "tdpRating": 280,
+        "price": 4990.0,
+        "imageUrls": []
+    },
+    {
+        "id": 8,
+        "name": "DeepCool LS720 360mm AIO",
+        "brand": "DeepCool",
+        "type": "AIO",
+        "supportedSockets": [
+            "AM4",
+            "AM5",
+            "LGA1700",
+            "LGA1851"
+        ],
+        "heightMm": 0,
+        "radiatorSizeMm": 360,
+        "fanSizeMm": 120,
+        "tdpRating": 350,
+        "price": 5990.0,
+        "imageUrls": []
+    }
+]

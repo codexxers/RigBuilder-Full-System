@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Arctic P12 PWM PST",
+        "brand": "Arctic",
+        "sizeMm": 120,
+        "quantity": 1,
+        "airflowCfm": 56.3,
+        "noiseLevelDba": 22.5,
+        "rgbType": null,
+        "price": 390.0,
+        "imageUrls": []
+    },
+    {
+        "id": 2,
+        "name": "Arctic P12 PWM PST Value Pack (5-Pack)",
+        "brand": "Arctic",
+        "sizeMm": 120,
+        "quantity": 3,
+        "airflowCfm": 56.3,
+        "noiseLevelDba": 22.5,
+        "rgbType": null,
+        "price": 990.0,
+        "imageUrls": []
+    },
+    {
+        "id": 3,
+        "name": "Corsair iCUE SP120 RGB ELITE",
+        "brand": "Corsair",
+        "sizeMm": 120,
+        "quantity": 1,
+        "airflowCfm": 47.7,
+        "noiseLevelDba": 18.0,
+        "rgbType": "ARGB",
+        "price": 890.0,
+        "imageUrls": []
+    },
+    {
+        "id": 4,
+        "name": "Corsair iCUE SP120 RGB ELITE 3-Pack",
+        "brand": "Corsair",
+        "sizeMm": 120,
+        "quantity": 3,
+        "airflowCfm": 47.7,
+        "noiseLevelDba": 18.0,
+        "rgbType": "ARGB",
+        "price": 2190.0,
+        "imageUrls": []
+    },
+    {
+        "id": 5,
+        "name": "Noctua NF-A14 PWM",
+        "brand": "Noctua",
+        "sizeMm": 140,
+        "quantity": 1,
+        "airflowCfm": 82.5,
+        "noiseLevelDba": 24.6,
+        "rgbType": null,
+        "price": 1490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 6,
+        "name": "Lian Li UNI FAN SL120 V2 3-Pack",
+        "brand": "Lian Li",
+        "sizeMm": 120,
+        "quantity": 3,
+        "airflowCfm": 61.3,
+        "noiseLevelDba": 29.0,
+        "rgbType": "ARGB",
+        "price": 3990.0,
+        "imageUrls": []
+    }
+]

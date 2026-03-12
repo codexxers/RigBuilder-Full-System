@@ -1,0 +1,81 @@
+================================================================================
+  RIGBUILDER APP - STORAGE (SSD/HDD) DATA SCHEMA
+  Table name in database: storages
+  Fill in one row per storage model. Share this file with your groupmate
+  responsible for storage data entry.
+================================================================================
+
+FIELD REFERENCE
+---------------
+
+| Field Name        | Type    | Required | Description / Notes                                    |
+|-------------------|---------|----------|--------------------------------------------------------|
+| id                | Integer | YES      | Unique number. Start from 1, increment by 1.           |
+| name              | Text    | YES      | Full product name. e.g. "Samsung 990 Pro"              |
+| brand             | Text    | YES      | e.g. "Samsung", "WD", "Seagate", "Kingston"            |
+| type              | Enum    | YES      | See VALID VALUES below                                 |
+| capacityGb        | Integer | YES      | Base/lowest capacity in GB. e.g. 500 for a 500GB drive |
+| readSpeedMbps     | Integer | YES      | Sequential read speed in MB/s. e.g. 7450               |
+| writeSpeedMbps    | Integer | YES      | Sequential write speed in MB/s. e.g. 6900              |
+| formFactor        | Text    | YES      | Physical form. See VALID VALUES below.                 |
+| capacityVariants  | List    | YES      | All available capacities. e.g. "500GB,1TB,2TB,4TB"    |
+| price             | Decimal | YES      | Price in PHP for the BASE (lowest) capacity. e.g. 3499.00 |
+| imageUrls         | List    | NO       | Comma-separated image URLs. Can leave blank.           |
+
+--------------------------------------------------------------------------------
+VALID VALUES FOR ENUM / FIXED FIELDS
+--------------------------------------------------------------------------------
+
+type:
+  M2_NVME   → M.2 NVMe SSD (fast, connects to M.2 slot)
+  SATA      → SATA SSD or HDD (slower, connects to SATA port)
+
+formFactor:
+  "M.2 2280"   → Standard M.2 NVMe stick (most common)
+  "2.5 inch"   → 2.5" SATA SSD
+  "3.5 inch"   → 3.5" HDD
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+- capacityGb: Use the LOWEST available capacity as the base.
+    e.g. Samsung 990 Pro comes in 1TB, 2TB, 4TB → enter 1000 (1TB = base)
+- capacityVariants: List ALL available capacities as a comma-separated string.
+    e.g. "1TB,2TB,4TB" or "500GB,1TB,2TB"
+- readSpeedMbps / writeSpeedMbps: Get these from the manufacturer specs page.
+    For SATA SSDs, typical read = ~550, write = ~500.
+    For budget NVMe (Gen3), typical read = ~3500.
+    For high-end NVMe (Gen4), typical read = ~7000+.
+- price: Enter price for the smallest capacity variant.
+
+--------------------------------------------------------------------------------
+EXAMPLE ENTRIES
+--------------------------------------------------------------------------------
+
+-- NVMe Example --
+id                : 1
+name              : Samsung 990 Pro
+brand             : Samsung
+type              : M2_NVME
+capacityGb        : 1000
+readSpeedMbps     : 7450
+writeSpeedMbps    : 6900
+formFactor        : M.2 2280
+capacityVariants  : 1TB,2TB,4TB
+price             : 4999.00
+imageUrls         : (leave blank or add URL)
+
+-- SATA Example --
+id                : 2
+name              : Samsung 870 EVO
+brand             : Samsung
+type              : SATA
+capacityGb        : 500
+readSpeedMbps     : 560
+writeSpeedMbps    : 530
+formFactor        : 2.5 inch
+capacityVariants  : 500GB,1TB,2TB,4TB
+price             : 2499.00
+imageUrls         : (leave blank or add URL)
+
+================================================================================

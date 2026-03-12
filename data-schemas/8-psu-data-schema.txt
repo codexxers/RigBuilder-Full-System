@@ -1,0 +1,75 @@
+================================================================================
+  RIGBUILDER APP - PSU / POWER SUPPLY DATA SCHEMA
+  Table name in database: psus
+  Fill in one row per PSU model. Share this file with your groupmate
+  responsible for PSU data entry.
+================================================================================
+
+FIELD REFERENCE
+---------------
+
+| Field Name   | Type    | Required | Description / Notes                                        |
+|--------------|---------|----------|------------------------------------------------------------|
+| id           | Integer | YES      | Unique number. Start from 1, increment by 1.               |
+| name         | Text    | YES      | Full product name. e.g. "Corsair RM1000x"                  |
+| brand        | Text    | YES      | e.g. "Corsair", "Seasonic", "be quiet!", "EVGA", "FSP"     |
+| wattage      | Integer | YES      | Power output in Watts. e.g. 750                            |
+| efficiency   | Text    | YES      | 80 Plus efficiency rating. See VALID VALUES below.         |
+| modularity   | Text    | YES      | Cable management type. See VALID VALUES below.             |
+| lengthMm     | Integer | YES      | PSU body length in mm. Used for case clearance. e.g. 150   |
+| price        | Decimal | YES      | Price in PHP. e.g. 7499.00                                 |
+| imageUrls    | List    | NO       | Comma-separated image URLs. Can leave blank.               |
+
+--------------------------------------------------------------------------------
+VALID VALUES FOR TEXT FIELDS
+--------------------------------------------------------------------------------
+
+efficiency (copy exactly):
+  "80+ White"
+  "80+ Bronze"
+  "80+ Silver"
+  "80+ Gold"
+  "80+ Platinum"
+  "80+ Titanium"
+
+modularity (copy exactly):
+  "Non-Modular"   → All cables are permanently attached
+  "Semi-Modular"  → Some cables attached, others detachable
+  "Full-Modular"  → All cables are detachable
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+- wattage: Enter the rated continuous wattage, not peak.
+    Common values: 550, 650, 750, 850, 1000, 1200
+- lengthMm: Most ATX PSUs are 140mm or 150mm. Some high-wattage models are 160mm
+    or longer. Check manufacturer specs. Used by app to verify case clearance.
+- efficiency: Higher = better. For gaming PCs, 80+ Gold is the sweet spot.
+
+--------------------------------------------------------------------------------
+EXAMPLE ENTRIES
+--------------------------------------------------------------------------------
+
+id          : 1
+name        : Corsair RM1000x
+brand       : Corsair
+wattage     : 1000
+efficiency  : 80+ Gold
+modularity  : Full-Modular
+lengthMm    : 160
+price       : 9499.00
+imageUrls   : (leave blank or add URL)
+
+---
+
+id          : 2
+name        : Seasonic Focus GX-750
+brand       : Seasonic
+wattage     : 750
+efficiency  : 80+ Gold
+modularity  : Full-Modular
+lengthMm    : 140
+price       : 6799.00
+imageUrls   : (leave blank or add URL)
+
+================================================================================

@@ -1,0 +1,78 @@
+================================================================================
+  RIGBUILDER APP - MOTHERBOARD DATA SCHEMA
+  Table name in database: motherboards
+  Fill in one row per motherboard model. Share this file with your groupmate
+  responsible for motherboard data entry.
+================================================================================
+
+FIELD REFERENCE
+---------------
+
+| Field Name        | Type    | Required | Description / Notes                                  |
+|-------------------|---------|----------|------------------------------------------------------|
+| id                | Integer | YES      | Unique number. Start from 1, increment by 1.         |
+| name              | Text    | YES      | Full product name. e.g. "ASUS ROG Strix B650-A"      |
+| brand             | Text    | YES      | e.g. "ASUS", "MSI", "Gigabyte", "ASRock"             |
+| socket            | Enum    | YES      | See VALID VALUES below                               |
+| chipset           | Enum    | YES      | See VALID VALUES below                               |
+| formFactor        | Enum    | YES      | See VALID VALUES below                               |
+| ramGeneration     | Enum    | YES      | See VALID VALUES below                               |
+| ramSlots          | Integer | YES      | Number of RAM slots. e.g. 4                          |
+| maxRamSpeedMhz    | Integer | YES      | Maximum supported RAM speed in MHz. e.g. 6000        |
+| m2Slots           | Integer | YES      | Number of M.2 NVMe slots. e.g. 3                    |
+| sataSlots         | Integer | YES      | Number of SATA ports. e.g. 6                        |
+| vrmTier           | Enum    | YES      | See VALID VALUES below                               |
+| price             | Decimal | YES      | Price in PHP. e.g. 12999.00                          |
+| imageUrls         | List    | NO       | Comma-separated image URLs. Can leave blank.         |
+
+--------------------------------------------------------------------------------
+VALID VALUES FOR ENUM FIELDS
+--------------------------------------------------------------------------------
+
+socket:
+  AM4, AM5, LGA1700, LGA1851
+  (Must match the chipset group — see below)
+
+chipset:
+  AMD AM4:    B550, X570
+  AMD AM5:    A620, B650, B650E, X670, X670E, B850, X870, X870E
+  Intel LGA1700: B660, B760, Z690, Z790
+  Intel LGA1851: B860, Z890
+
+formFactor:
+  ITX    → Mini-ITX (smallest)
+  MATX   → Micro-ATX (medium-small)
+  ATX    → Standard ATX (most common)
+  EATX   → Extended ATX (largest, high-end)
+
+ramGeneration:
+  DDR4   → Compatible with DDR4 RAM sticks
+  DDR5   → Compatible with DDR5 RAM sticks
+  (Note: AM4 = DDR4 only. AM5 = DDR5 only. Intel depends on chipset.)
+
+vrmTier:
+  BASIC    → Entry-level VRM (suitable for non-OC, lower TDP CPUs)
+  MID      → Mid-range VRM (most modern mid-tier boards)
+  HIGH     → Strong VRM (suitable for high-TDP CPUs)
+  PREMIUM  → Enthusiast-grade VRM (extreme overclocking)
+
+--------------------------------------------------------------------------------
+EXAMPLE ENTRY
+--------------------------------------------------------------------------------
+
+id              : 1
+name            : ASUS ROG Strix B650-A Gaming WiFi
+brand           : ASUS
+socket          : AM5
+chipset         : B650
+formFactor      : ATX
+ramGeneration   : DDR5
+ramSlots        : 4
+maxRamSpeedMhz  : 6400
+m2Slots         : 3
+sataSlots       : 6
+vrmTier         : HIGH
+price           : 16999.00
+imageUrls       : (leave blank or add URL)
+
+================================================================================

@@ -1,0 +1,186 @@
+================================================================================
+  RIGBUILDER APP — SAMPLE DATA COLLECTION
+  All example entries from each component schema, compiled in app order.
+  Use this as a reference/template when filling in real component data.
+================================================================================
+
+
+[1] CPU / PROCESSOR
+--------------------------------------------------------------------------------
+name                : Ryzen 5 7600X
+brand               : AMD
+socket              : AM5
+architecture        : ZEN4
+powerTier           : MID
+supportedChipsets   : B650,B650E,X670,X670E,B850,X870,X870E
+cores               : 6
+threads             : 12
+baseClockGhz        : 4.7
+boostClockGhz       : 5.3
+tdp                 : 105
+integratedGraphics  : Radeon Graphics
+price               : 14999.00
+
+
+[2] MOTHERBOARD
+--------------------------------------------------------------------------------
+name            : ASUS ROG Strix B650-A Gaming WiFi
+brand           : ASUS
+socket          : AM5
+chipset         : B650
+formFactor      : ATX
+ramGeneration   : DDR5
+ramSlots        : 4
+maxRamSpeedMhz  : 6400
+m2Slots         : 3
+sataSlots       : 6
+price           : 16999.00
+
+[3] RAM / MEMORY
+--------------------------------------------------------------------------------
+id            : 1
+name          : G.Skill Trident Z5 RGB DDR5-6000
+brand         : G.Skill
+generation    : DDR5
+capacityGb    : 32
+speedMhz      : 6000
+latency       : CL30
+modules       : 2
+colorVariants : Black,White,Silver
+price         : 8499.00
+
+
+[4] GPU / GRAPHICS CARD
+--------------------------------------------------------------------------------
+
+name                : RTX 4070 Super
+brand               : NVIDIA
+vramGb              : 12
+lengthMm            : 336
+thicknessSlots      : 3.0
+recommendedPsuWatts : 650
+TDP                 : 220
+price               : 29999.00
+imageUrls           :
+gamingTier          : 8
+
+
+[5] STORAGE
+--------------------------------------------------------------------------------
+-- NVMe SSD --
+name              : Samsung 990 Pro
+brand             : Samsung
+type              : M2_NVME
+capacityGb        : 1000
+readSpeedMbps     : 7450
+writeSpeedMbps    : 6900
+formFactor        : M.2 2280
+capacityVariants  : 1TB,2TB,4TB
+price             : 4999.00
+
+
+-- SATA SSD --
+name              : Samsung 870 EVO
+brand             : Samsung
+type              : SATA
+capacityGb        : 500
+readSpeedMbps     : 560
+writeSpeedMbps    : 530
+formFactor        : 2.5 inch
+capacityVariants  : 500GB,1TB,2TB,4TB
+price             : 2499.00
+
+
+
+[6] CPU COOLER
+--------------------------------------------------------------------------------
+-- Air Cooler --
+name              : Noctua NH-D15
+brand             : Noctua
+type              : AIR
+supportedSockets  : AM4,AM5,LGA1700,LGA1851
+heightMm          : 165
+radiatorSizeMm    : 0
+fanSizeMm         : 140
+tdpRating         : 250
+price             : 4999.00
+
+
+-- AIO Cooler --
+name              : ARCTIC Liquid Freezer III 360
+brand             : ARCTIC
+type              : AIO
+supportedSockets  : AM4,AM5,LGA1700,LGA1851
+heightMm          : 0
+radiatorSizeMm    : 360
+fanSizeMm         : 120
+tdpRating         : 300
+price             : 6499.00
+
+
+[7] CASE / CHASSIS
+--------------------------------------------------------------------------------
+name                  : Lian Li PC-O11 Dynamic EVO
+brand                 : Lian Li
+supportedFormFactors  : MATX,ATX,EATX
+maxGpuLengthMm        : 420
+maxCpuCoolerHeightMm  : 167
+maxPsuLengthMm        : 220
+maxRadiatorSizeMm     : 360
+totalFanSlots         : 10
+includedFans          : 0
+colorVariants         : Black,White
+price                 : 9999.00
+imageUrls             :
+
+
+[8] PSU / POWER SUPPLY
+--------------------------------------------------------------------------------
+name        : Corsair RM1000x
+brand       : Corsair
+wattage     : 1000
+efficiency  : 80+ Gold
+modularity  : Full-Modular
+lengthMm    : 160
+price       : 9499.00
+
+
+---
+
+name        : Seasonic Focus GX-750
+brand       : Seasonic
+wattage     : 750
+efficiency  : 80+ Gold
+modularity  : Full-Modular
+lengthMm    : 140
+price       : 6799.00
+
+
+
+[9] CASE FANS
+--------------------------------------------------------------------------------
+-- Single Fan --
+id            : 1
+name          : Noctua NF-A12x25 PWM
+brand         : Noctua
+sizeMm        : 120
+quantity      : 1
+airflowCfm    : 60.1
+noiseLevelDba : 22.6
+rgbType       :
+price         : 1299.00
+imageUrls     :
+
+-- 3-Pack ARGB Fan --
+id            : 2
+name          : Lian Li Uni Fan SL120 3-Pack
+brand         : Lian Li
+sizeMm        : 120
+quantity      : 3
+airflowCfm    : 56.5
+noiseLevelDba : 25.2
+rgbType       : ARGB
+price         : 3499.00
+imageUrls     :
+
+================================================================================

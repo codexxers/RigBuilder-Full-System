@@ -1,0 +1,81 @@
+================================================================================
+  RIGBUILDER APP - CPU / PROCESSOR DATA SCHEMA
+  Table name in database: cpus
+  Fill in one row per CPU model. Share this file with your groupmate
+  responsible for CPU data entry.
+================================================================================
+
+FIELD REFERENCE
+---------------
+
+| Field Name           | Type    | Required | Description / Notes                              |
+|----------------------|---------|----------|--------------------------------------------------|
+| id                   | Integer | YES      | Unique number for each entry. Start from 1, increment by 1. |
+| name                 | Text    | YES      | Full product name. e.g. "Ryzen 5 7600X"          |
+| brand                | Text    | YES      | e.g. "AMD" or "Intel"                            |
+| socket               | Enum    | YES      | See VALID VALUES below                           |
+| architecture         | Enum    | YES      | See VALID VALUES below                           |
+| powerTier            | Enum    | YES      | See VALID VALUES below                           |
+| supportedChipsets    | List    | YES      | Comma-separated list of compatible chipsets. See VALID VALUES below. e.g. "B650,X670,X670E" |
+| cores                | Integer | YES      | Physical core count. e.g. 6                      |
+| threads              | Integer | YES      | Thread count. e.g. 12                            |
+| baseClockGhz         | Decimal | YES      | Base clock speed in GHz. e.g. 3.6               |
+| boostClockGhz        | Decimal | YES      | Max boost clock in GHz. e.g. 5.3                |
+| tdp                  | Integer | YES      | Thermal Design Power in Watts. e.g. 105          |
+| integratedGraphics   | Text    | NO       | Name of iGPU if present. e.g. "Radeon Graphics" Leave blank if none. |
+| price                | Decimal | YES      | Price in Philippine Peso (PHP). e.g. 15999.00    |
+| imageUrls            | List    | NO       | Comma-separated image URLs. Can leave blank.     |
+| gamingTier           | Integer | YES      | Gaming performance tier on a 1–10 scale. 1=lowest, 10=highest. e.g. 7 |
+
+--------------------------------------------------------------------------------
+VALID VALUES FOR ENUM FIELDS
+--------------------------------------------------------------------------------
+
+socket:
+  AM4         → AMD Ryzen (older, e.g. Ryzen 5000 series)
+  AM5         → AMD Ryzen (newer, e.g. Ryzen 7000/9000 series)
+  LGA1700     → Intel 12th, 13th, 14th Gen
+  LGA1851     → Intel Arrow Lake (Core Ultra 200 series)
+
+architecture:
+  ZEN3        → AMD Ryzen 5000 series (AM4)
+  ZEN4        → AMD Ryzen 7000 series (AM5)
+  ZEN5        → AMD Ryzen 9000 series (AM5)
+  ALDER_LAKE  → Intel 12th Gen (LGA1700)
+  RAPTOR_LAKE → Intel 13th/14th Gen (LGA1700)
+  ARROW_LAKE  → Intel Core Ultra 200 series (LGA1851)
+
+powerTier:
+  LOW         → Entry-level, low power (e.g. Ryzen 5, Core i3)
+  MID         → Mid-range (e.g. Ryzen 7, Core i5/i7)
+  HIGH        → High-end (e.g. Ryzen 9, Core i9)
+  EXTREME     → Flagship / Enthusiast
+
+supportedChipsets (use only chipsets matching the CPU socket):
+  AMD AM4:   B550, X570
+  AMD AM5:   A620, B650, B650E, X670, X670E, B850, X870, X870E
+  Intel LGA1700: B660, B760, Z690, Z790
+  Intel LGA1851: B860, Z890
+
+--------------------------------------------------------------------------------
+EXAMPLE ENTRY
+--------------------------------------------------------------------------------
+
+id                  : 1
+name                : Ryzen 5 7600X
+brand               : AMD
+socket              : AM5
+architecture        : ZEN4
+powerTier           : MID
+supportedChipsets   : B650,B650E,X670,X670E,B850,X870,X870E
+cores               : 6
+threads             : 12
+baseClockGhz        : 4.7
+boostClockGhz       : 5.3
+tdp                 : 105
+integratedGraphics  : Radeon Graphics
+price               : 14999.00
+imageUrls           : (leave blank or add URL)
+gamingTier          : 7
+
+================================================================================

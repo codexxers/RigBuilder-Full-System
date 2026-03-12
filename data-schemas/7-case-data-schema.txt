@@ -1,0 +1,72 @@
+================================================================================
+  RIGBUILDER APP - CASE / CHASSIS DATA SCHEMA
+  Table name in database: cases
+  Fill in one row per case model. Share this file with your groupmate
+  responsible for case data entry.
+================================================================================
+
+FIELD REFERENCE
+---------------
+
+| Field Name              | Type    | Required | Description / Notes                                    |
+|-------------------------|---------|----------|--------------------------------------------------------|
+| id                      | Integer | YES      | Unique number. Start from 1, increment by 1.           |
+| name                    | Text    | YES      | Full product name. e.g. "Lian Li PC-O11 Dynamic"       |
+| brand                   | Text    | YES      | e.g. "Lian Li", "NZXT", "Fractal Design", "Corsair"   |
+| supportedFormFactors    | List    | YES      | Supported motherboard sizes, comma-separated.          |
+| maxGpuLengthMm          | Integer | YES      | Max GPU card length clearance in mm. e.g. 380          |
+| maxCpuCoolerHeightMm    | Integer | YES      | Max air cooler height clearance in mm. e.g. 165        |
+| maxPsuLengthMm          | Integer | YES      | Max PSU length in mm. e.g. 220                         |
+| maxRadiatorSizeMm       | Integer | YES      | Largest radiator it can fit (0 = no liquid cooling). e.g. 360 |
+| totalFanSlots           | Integer | YES      | Total number of fan mounting positions. e.g. 9         |
+| includedFans            | Integer | YES      | Number of fans pre-installed. e.g. 3                   |
+| colorVariants           | List    | YES      | Available color options, comma-separated. e.g. "Black,White" |
+| price                   | Decimal | YES      | Price in PHP. e.g. 9999.00                             |
+| imageUrls               | List    | NO       | Comma-separated image URLs. Can leave blank.           |
+
+--------------------------------------------------------------------------------
+VALID VALUES FOR ENUM / FIXED FIELDS
+--------------------------------------------------------------------------------
+
+supportedFormFactors (comma-separated, pick all that the case physically fits):
+  ITX    → Mini-ITX motherboards
+  MATX   → Micro-ATX motherboards
+  ATX    → Standard ATX motherboards
+  EATX   → Extended ATX motherboards
+  e.g. A mid-tower that takes ATX and below: "ITX,MATX,ATX"
+
+maxRadiatorSizeMm:
+  0    → No liquid cooling support
+  120  → Up to 120mm radiator
+  240  → Up to 240mm radiator
+  280  → Up to 280mm radiator
+  360  → Up to 360mm radiator
+
+--------------------------------------------------------------------------------
+NOTES
+--------------------------------------------------------------------------------
+- maxGpuLengthMm: Critical compatibility field. Check the manufacturer's official
+  spec page. e.g. "Max GPU Length: 380mm"
+- maxCpuCoolerHeightMm: Usually labeled as "CPU Cooler Clearance" on spec sheets.
+- maxPsuLengthMm: Usually between 160mm and 220mm. Most full-size PSUs are 150mm.
+- totalFanSlots: Count ALL possible fan mounting positions (top, front, rear, bottom).
+
+--------------------------------------------------------------------------------
+EXAMPLE ENTRY
+--------------------------------------------------------------------------------
+
+id                    : 1
+name                  : Lian Li PC-O11 Dynamic EVO
+brand                 : Lian Li
+supportedFormFactors  : MATX,ATX,EATX
+maxGpuLengthMm        : 420
+maxCpuCoolerHeightMm  : 167
+maxPsuLengthMm        : 220
+maxRadiatorSizeMm     : 360
+totalFanSlots         : 10
+includedFans          : 0
+colorVariants         : Black,White
+price                 : 9999.00
+imageUrls             : (leave blank or add URL)
+
+================================================================================

@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "name": "NZXT H510 Flow",
+        "brand": "NZXT",
+        "supportedFormFactors": [
+            "ATX",
+            "MATX",
+            "ITX"
+        ],
+        "maxGpuLengthMm": 360,
+        "maxCpuCoolerHeightMm": 165,
+        "maxPsuLengthMm": 200,
+        "maxRadiatorSizeMm": 280,
+        "totalFanSlots": 4,
+        "includedFans": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 4490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 2,
+        "name": "Corsair 4000D Airflow",
+        "brand": "Corsair",
+        "supportedFormFactors": [
+            "ATX",
+            "MATX",
+            "ITX"
+        ],
+        "maxGpuLengthMm": 360,
+        "maxCpuCoolerHeightMm": 170,
+        "maxPsuLengthMm": 180,
+        "maxRadiatorSizeMm": 360,
+        "totalFanSlots": 6,
+        "includedFans": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 5490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 3,
+        "name": "Lian Li Lancool III",
+        "brand": "Lian Li",
+        "supportedFormFactors": [
+            "ATX",
+            "MATX",
+            "EATX",
+            "ITX"
+        ],
+        "maxGpuLengthMm": 420,
+        "maxCpuCoolerHeightMm": 187,
+        "maxPsuLengthMm": 220,
+        "maxRadiatorSizeMm": 360,
+        "totalFanSlots": 9,
+        "includedFans": 3,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 6990.0,
+        "imageUrls": []
+    },
+    {
+        "id": 4,
+        "name": "Fractal Design Pop Mini Air",
+        "brand": "Fractal Design",
+        "supportedFormFactors": [
+            "MATX",
+            "ITX"
+        ],
+        "maxGpuLengthMm": 330,
+        "maxCpuCoolerHeightMm": 165,
+        "maxPsuLengthMm": 175,
+        "maxRadiatorSizeMm": 280,
+        "totalFanSlots": 5,
+        "includedFans": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4290.0,
+        "imageUrls": []
+    },
+    {
+        "id": 5,
+        "name": "NZXT H9 Flow",
+        "brand": "NZXT",
+        "supportedFormFactors": [
+            "ATX",
+            "MATX",
+            "EATX",
+            "ITX"
+        ],
+        "maxGpuLengthMm": 435,
+        "maxCpuCoolerHeightMm": 175,
+        "maxPsuLengthMm": 200,
+        "maxRadiatorSizeMm": 360,
+        "totalFanSlots": 10,
+        "includedFans": 4,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 9490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 6,
+        "name": "Cooler Master MasterBox Q300L",
+        "brand": "Cooler Master",
+        "supportedFormFactors": [
+            "MATX",
+            "ITX"
+        ],
+        "maxGpuLengthMm": 360,
+        "maxCpuCoolerHeightMm": 157,
+        "maxPsuLengthMm": 160,
+        "maxRadiatorSizeMm": 240,
+        "totalFanSlots": 4,
+        "includedFans": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2990.0,
+        "imageUrls": []
+    }
+]

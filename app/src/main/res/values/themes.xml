@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.RigBuilder" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary -->
+        <item name="colorPrimary">@color/rig_red</item>
+        <item name="colorOnPrimary">@color/rig_white</item>
+        <item name="colorPrimaryContainer">@color/rig_red_dark</item>
+        <item name="colorOnPrimaryContainer">@color/rig_white</item>
+
+        <!-- Secondary -->
+        <item name="colorSecondary">@color/rig_red_light</item>
+        <item name="colorOnSecondary">@color/rig_white</item>
+        <item name="colorSecondaryContainer">@color/rig_surface_variant</item>
+        <item name="colorOnSecondaryContainer">@color/rig_white</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">@color/rig_black</item>
+        <item name="colorOnBackground">@color/rig_white</item>
+        <item name="colorSurface">@color/rig_surface</item>
+        <item name="colorOnSurface">@color/rig_white</item>
+        <item name="colorSurfaceVariant">@color/rig_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/rig_gray</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@color/rig_white</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/rig_gray_dark</item>
+        <item name="colorOutlineVariant">@color/outline_variant</item>
+
+        <!-- Status Bar & Navigation -->
+        <item name="android:statusBarColor">@color/rig_black</item>
+        <item name="android:navigationBarColor">@color/rig_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

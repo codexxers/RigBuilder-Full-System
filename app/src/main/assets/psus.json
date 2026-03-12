@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Corsair RM750e 80+ Gold",
+        "brand": "Corsair",
+        "wattage": 750,
+        "efficiency": "80+ Gold",
+        "modularity": "Full",
+        "lengthMm": 150,
+        "price": 5490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 2,
+        "name": "Seasonic Focus GX-850 80+ Gold",
+        "brand": "Seasonic",
+        "wattage": 850,
+        "efficiency": "80+ Gold",
+        "modularity": "Full",
+        "lengthMm": 160,
+        "price": 6990.0,
+        "imageUrls": []
+    },
+    {
+        "id": 3,
+        "name": "EVGA SuperNOVA 1000 G7 80+ Gold",
+        "brand": "EVGA",
+        "wattage": 1000,
+        "efficiency": "80+ Gold",
+        "modularity": "Full",
+        "lengthMm": 180,
+        "price": 8990.0,
+        "imageUrls": []
+    },
+    {
+        "id": 4,
+        "name": "Cooler Master MWE V2 650 80+ Bronze",
+        "brand": "Cooler Master",
+        "wattage": 650,
+        "efficiency": "80+ Bronze",
+        "modularity": "Semi",
+        "lengthMm": 140,
+        "price": 3490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 5,
+        "name": "Corsair RM1000x 80+ Gold",
+        "brand": "Corsair",
+        "wattage": 1000,
+        "efficiency": "80+ Gold",
+        "modularity": "Full",
+        "lengthMm": 180,
+        "price": 9490.0,
+        "imageUrls": []
+    },
+    {
+        "id": 6,
+        "name": "Seasonic Focus GM-550 80+ Gold",
+        "brand": "Seasonic",
+        "wattage": 550,
+        "efficiency": "80+ Gold",
+        "modularity": "Semi",
+        "lengthMm": 140,
+        "price": 3990.0,
+        "imageUrls": []
+    }
+]

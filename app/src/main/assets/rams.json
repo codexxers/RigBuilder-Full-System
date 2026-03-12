@@ -1,0 +1,737 @@
+[
+    {
+        "id": 1,
+        "name": "TeamGroup T-Force Vulcan 8GB (1x8GB) DDR4 3200MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR4",
+        "capacityGb": 8,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black",
+            "Red"
+        ],
+        "price": 1195.0,
+        "imageUrls": []
+    },
+    {
+        "id": 2,
+        "name": "G.Skill Ripjaws V 8GB (1x8GB) DDR4 3200MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR4",
+        "capacityGb": 8,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 1295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 3,
+        "name": "Kingston Fury Beast 8GB (1x8GB) DDR4 3200MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR4",
+        "capacityGb": 8,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 1350.0,
+        "imageUrls": []
+    },
+    {
+        "id": 4,
+        "name": "Corsair Vengeance LPX 8GB (1x8GB) DDR4 3200MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR4",
+        "capacityGb": 8,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 1395.0,
+        "imageUrls": []
+    },
+    {
+        "id": 5,
+        "name": "Lexar Thor 8GB (1x8GB) DDR4 3200MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR4",
+        "capacityGb": 8,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 1150.0,
+        "imageUrls": []
+    },
+    {
+        "id": 6,
+        "name": "PNY XLR8 Gaming 8GB (1x8GB) DDR4 3200MHz Desktop Memory",
+        "brand": "PNY",
+        "generation": "DDR4",
+        "capacityGb": 8,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 1195.0,
+        "imageUrls": []
+    },
+    {
+        "id": 7,
+        "name": "TeamGroup T-Force Vulcan 16GB (1x16GB) DDR4 3200MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black",
+            "Red"
+        ],
+        "price": 2095.0,
+        "imageUrls": []
+    },
+    {
+        "id": 8,
+        "name": "G.Skill Ripjaws V 16GB (1x16GB) DDR4 3200MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 9,
+        "name": "Kingston Fury Beast 16GB (1x16GB) DDR4 3200MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2395.0,
+        "imageUrls": []
+    },
+    {
+        "id": 10,
+        "name": "Corsair Vengeance LPX 16GB (1x16GB) DDR4 3200MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 11,
+        "name": "Lexar Thor 16GB (1x16GB) DDR4 3200MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2050.0,
+        "imageUrls": []
+    },
+    {
+        "id": 12,
+        "name": "PNY XLR8 Gaming 16GB (1x16GB) DDR4 3200MHz Desktop Memory",
+        "brand": "PNY",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3200,
+        "latency": "CL16",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2195.0,
+        "imageUrls": []
+    },
+    {
+        "id": 13,
+        "name": "TeamGroup T-Force Dark ZA 16GB (2x8GB) DDR4 3600MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 14,
+        "name": "TeamGroup T-Force Delta RGB 16GB (2x8GB) DDR4 3600MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 2595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 15,
+        "name": "G.Skill Ripjaws V 16GB (2x8GB) DDR4 3600MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 16,
+        "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR4 3600MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2695.0,
+        "imageUrls": []
+    },
+    {
+        "id": 17,
+        "name": "Kingston Fury Beast 16GB (2x8GB) DDR4 3600MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2795.0,
+        "imageUrls": []
+    },
+    {
+        "id": 18,
+        "name": "Lexar Thor 16GB (2x8GB) DDR4 3600MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR4",
+        "capacityGb": 16,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2195.0,
+        "imageUrls": []
+    },
+    {
+        "id": 19,
+        "name": "G.Skill Ripjaws V 32GB (2x16GB) DDR4 3600MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR4",
+        "capacityGb": 32,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 20,
+        "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR4 3600MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR4",
+        "capacityGb": 32,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 21,
+        "name": "Kingston Fury Beast 32GB (2x16GB) DDR4 3600MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR4",
+        "capacityGb": 32,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4795.0,
+        "imageUrls": []
+    },
+    {
+        "id": 22,
+        "name": "TeamGroup T-Force Vulcan 32GB (2x16GB) DDR4 3600MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR4",
+        "capacityGb": 32,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "Red"
+        ],
+        "price": 4095.0,
+        "imageUrls": []
+    },
+    {
+        "id": 23,
+        "name": "Lexar Thor 32GB (2x16GB) DDR4 3600MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR4",
+        "capacityGb": 32,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 3895.0,
+        "imageUrls": []
+    },
+    {
+        "id": 24,
+        "name": "PNY XLR8 Gaming EPIC-X RGB 32GB (2x16GB) DDR4 3600MHz Desktop Memory",
+        "brand": "PNY",
+        "generation": "DDR4",
+        "capacityGb": 32,
+        "speedMhz": 3600,
+        "latency": "CL18",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4395.0,
+        "imageUrls": []
+    },
+    {
+        "id": 25,
+        "name": "Lexar Ares RGB 16GB (1x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR5",
+        "capacityGb": 16,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 26,
+        "name": "Kingston Fury Beast 16GB (1x16GB) DDR5 5600MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR5",
+        "capacityGb": 16,
+        "speedMhz": 5600,
+        "latency": "CL36",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2695.0,
+        "imageUrls": []
+    },
+    {
+        "id": 27,
+        "name": "TeamGroup T-Force Delta RGB 16GB (1x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR5",
+        "capacityGb": 16,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 1,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 2595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 28,
+        "name": "Corsair Vengeance 16GB (1x16GB) DDR5 5600MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR5",
+        "capacityGb": 16,
+        "speedMhz": 5600,
+        "latency": "CL36",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2795.0,
+        "imageUrls": []
+    },
+    {
+        "id": 29,
+        "name": "G.Skill Flare X5 16GB (1x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR5",
+        "capacityGb": 16,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2895.0,
+        "imageUrls": []
+    },
+    {
+        "id": 30,
+        "name": "PNY XLR8 Gaming 16GB (1x16GB) DDR5 5600MHz Desktop Memory",
+        "brand": "PNY",
+        "generation": "DDR5",
+        "capacityGb": 16,
+        "speedMhz": 5600,
+        "latency": "CL36",
+        "modules": 1,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 2395.0,
+        "imageUrls": []
+    },
+    {
+        "id": 31,
+        "name": "Lexar Ares RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 32,
+        "name": "Kingston Fury Beast RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 4995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 33,
+        "name": "TeamGroup T-Force Delta RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 4395.0,
+        "imageUrls": []
+    },
+    {
+        "id": 34,
+        "name": "Corsair Vengeance RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 5295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 35,
+        "name": "G.Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 5595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 36,
+        "name": "PNY XLR8 Gaming EPIC-X RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory",
+        "brand": "PNY",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 4295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 37,
+        "name": "G.Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5 6400MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 6400,
+        "latency": "CL32",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 6495.0,
+        "imageUrls": []
+    },
+    {
+        "id": 38,
+        "name": "Corsair Dominator Titanium RGB 32GB (2x16GB) DDR5 7200MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 7200,
+        "latency": "CL34",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "Silver"
+        ],
+        "price": 8695.0,
+        "imageUrls": []
+    },
+    {
+        "id": 39,
+        "name": "G.Skill Trident Z5 Royal Neo 32GB (2x16GB) DDR5 8000MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR5",
+        "capacityGb": 32,
+        "speedMhz": 8000,
+        "latency": "CL38",
+        "modules": 2,
+        "colorVariants": [
+            "Silver"
+        ],
+        "price": 12995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 40,
+        "name": "Lexar Ares RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Lexar",
+        "generation": "DDR5",
+        "capacityGb": 64,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 8295.0,
+        "imageUrls": []
+    },
+    {
+        "id": 41,
+        "name": "Kingston Fury Beast 64GB (2x32GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR5",
+        "capacityGb": 64,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 8995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 42,
+        "name": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR5",
+        "capacityGb": 64,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 9595.0,
+        "imageUrls": []
+    },
+    {
+        "id": 43,
+        "name": "TeamGroup T-Force Delta RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory",
+        "brand": "TeamGroup",
+        "generation": "DDR5",
+        "capacityGb": 64,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 7995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 44,
+        "name": "G.Skill Trident Z5 Neo RGB 64GB (2x32GB) DDR5 6400MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR5",
+        "capacityGb": 64,
+        "speedMhz": 6400,
+        "latency": "CL32",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 11995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 45,
+        "name": "PNY XLR8 Gaming EPIC-X RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory",
+        "brand": "PNY",
+        "generation": "DDR5",
+        "capacityGb": 64,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 7895.0,
+        "imageUrls": []
+    },
+    {
+        "id": 46,
+        "name": "G.Skill Trident Z5 Neo RGB 96GB (2x48GB) DDR5 6400MHz Desktop Memory",
+        "brand": "G.Skill",
+        "generation": "DDR5",
+        "capacityGb": 96,
+        "speedMhz": 6400,
+        "latency": "CL32",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 18995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 47,
+        "name": "Corsair Vengeance RGB 96GB (2x48GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Corsair",
+        "generation": "DDR5",
+        "capacityGb": 96,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black",
+            "White"
+        ],
+        "price": 17995.0,
+        "imageUrls": []
+    },
+    {
+        "id": 48,
+        "name": "Kingston Fury Beast 96GB (2x48GB) DDR5 6000MHz Desktop Memory",
+        "brand": "Kingston",
+        "generation": "DDR5",
+        "capacityGb": 96,
+        "speedMhz": 6000,
+        "latency": "CL30",
+        "modules": 2,
+        "colorVariants": [
+            "Black"
+        ],
+        "price": 16995.0,
+        "imageUrls": []
+    }
+]

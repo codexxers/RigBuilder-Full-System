@@ -1,0 +1,77 @@
+================================================================================
+  RIGBUILDER APP - CPU COOLER DATA SCHEMA
+  Table name in database: coolers
+  Fill in one row per cooler model. Share this file with your groupmate
+  responsible for CPU cooler data entry.
+================================================================================
+
+FIELD REFERENCE
+---------------
+
+| Field Name        | Type    | Required | Description / Notes                                   |
+|-------------------|---------|----------|-------------------------------------------------------|
+| id                | Integer | YES      | Unique number. Start from 1, increment by 1.          |
+| name              | Text    | YES      | Full product name. e.g. "Noctua NH-D15"               |
+| brand             | Text    | YES      | e.g. "Noctua", "be quiet!", "Cooler Master", "ARCTIC" |
+| type              | Enum    | YES      | See VALID VALUES below                                |
+| supportedSockets  | List    | YES      | Comma-separated list of compatible CPU sockets.       |
+| heightMm          | Integer | YES      | Cooler tower height in mm. Enter 0 for AIO coolers.   |
+| radiatorSizeMm    | Integer | YES      | Radiator size in mm. Enter 0 for air coolers.         |
+| fanSizeMm         | Integer | YES      | Fan diameter in mm. Usually 120 or 140.               |
+| tdpRating         | Integer | YES      | Max CPU TDP the cooler can handle in Watts. e.g. 250  |
+| price             | Decimal | YES      | Price in PHP. e.g. 4999.00                            |
+| imageUrls         | List    | NO       | Comma-separated image URLs. Can leave blank.          |
+
+--------------------------------------------------------------------------------
+VALID VALUES FOR ENUM / FIXED FIELDS
+--------------------------------------------------------------------------------
+
+type:
+  AIR   → Air cooler (tower heatsink with fans)
+  AIO   → All-In-One liquid cooler (pump + radiator)
+
+supportedSockets (pick all that apply, comma-separated):
+  AM4, AM5, LGA1700, LGA1851
+
+heightMm:
+  - For AIR coolers: look up the tower height from manufacturer specs.
+      e.g. Noctua NH-D15 = 165mm
+  - For AIO coolers: enter 0
+
+radiatorSizeMm:
+  - For AIO coolers: 120, 240, 280, or 360
+  - For AIR coolers: enter 0
+
+fanSizeMm: 120 or 140
+
+--------------------------------------------------------------------------------
+EXAMPLE ENTRIES
+--------------------------------------------------------------------------------
+
+-- Air Cooler Example --
+id                : 1
+name              : Noctua NH-D15
+brand             : Noctua
+type              : AIR
+supportedSockets  : AM4,AM5,LGA1700,LGA1851
+heightMm          : 165
+radiatorSizeMm    : 0
+fanSizeMm         : 140
+tdpRating         : 250
+price             : 4999.00
+imageUrls         : (leave blank or add URL)
+
+-- AIO Cooler Example --
+id                : 2
+name              : ARCTIC Liquid Freezer III 360
+brand             : ARCTIC
+type              : AIO
+supportedSockets  : AM4,AM5,LGA1700,LGA1851
+heightMm          : 0
+radiatorSizeMm    : 360
+fanSizeMm         : 120
+tdpRating         : 300
+price             : 6499.00
+imageUrls         : (leave blank or add URL)
+
+================================================================================

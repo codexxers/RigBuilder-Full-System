@@ -1,0 +1,11 @@
+Update Notes:
+
+- Home Header Style is Enhanced
+- Games in "Can I Run It" now has Cover Pages
+
+[2026-03-11]
+- Header redesigned: dark-red gradient background, app logo, bold title + "PC BUILD CONFIGURATOR" subtitle, red accent line at bottom
+- Fixed overlapping title: removed old programmatic title injection from BuildFragment
+- Added game cover thumbnails to all 13 games in the "Can I Run It" page (Apex Legends, Arc Raiders, Black Myth: Wukong, Counter-Strike 2, Cyberpunk 2077, Elden Ring, Fortnite, GTA V, GTA VI, Hogwarts Legacy, League of Legends, Red Dead Redemption 2, Valorant)
+- Data schema TXT files renamed with numeric order prefix (1-cpu, 2-motherboard, ... 9-fan)
+- Compiled sample data entries into a single reference file (0-sample-entries-collection.txt)

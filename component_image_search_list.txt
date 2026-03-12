@@ -1,0 +1,260 @@
+RIGBUILDER COMPONENT LIST FOR IMAGE SEARCH
+==========================================
+
+--- CPU (34 items) ---
+- AMD Ryzen 9 9950X3D
+- AMD Ryzen 9 9950X
+- AMD Ryzen 9 9900X
+- AMD Ryzen 7 9800X3D
+- AMD Ryzen 7 9700X
+- AMD Ryzen 7 9700F
+- AMD Ryzen 5 9600X
+- AMD Ryzen 5 9600
+- AMD Ryzen 7 8700G
+- AMD Ryzen 7 8700F
+- AMD Ryzen 5 8600G
+- AMD Ryzen 5 8600F
+- AMD Ryzen 5 8500G
+- AMD Ryzen 5 8400F
+- AMD Ryzen 9 7950X3D
+- AMD Ryzen 9 7950X
+- AMD Ryzen 9 7900X3D
+- AMD Ryzen 9 7900X
+- AMD Ryzen 9 7900
+- AMD Ryzen 7 7800X3D
+- AMD Ryzen 7 7700X
+- AMD Ryzen 7 7700
+- AMD Ryzen 5 7600X
+- AMD Ryzen 5 7600
+- AMD Ryzen 5 7500F
+- AMD Ryzen 5 5600X
+- AMD Ryzen 7 5800X
+- AMD Ryzen 9 5900X
+- Intel Core i5-12400F
+- Intel Core i5-13600K
+- Intel Core i7-14700K
+- Intel Core i9-14900K
+- Intel Core Ultra 5 245K
+- Intel Core Ultra 7 265K
+
+--- MOTHERBOARD (34 items) ---
+- MSI MAG B550 TOMAHAWK
+- ASUS ROG Strix X570-E Gaming
+- Gigabyte B550M AORUS PRO-P
+- MSI MAG B650 TOMAHAWK WIFI
+- ASUS ROG Strix X670E-E Gaming
+- Gigabyte B650M AORUS ELITE AX
+- MSI PRO B760-P WIFI DDR4
+- ASUS ROG Strix Z790-E Gaming
+- Gigabyte B760M DS3H DDR5
+- MSI MAG Z790 TOMAHAWK WIFI
+- ASUS ROG Strix Z890-E Gaming
+- MSI MAG B860 TOMAHAWK WIFI
+- ASRock A620M-HDV/M.2+
+- ASUS Prime A620M-K
+- Gigabyte A620M Gaming X
+- MSI PRO A620M-E
+- ASRock B650M-H/M.2+
+- ASUS ROG Strix B650-A Gaming WiFi
+- MSI PRO B650M-A WIFI
+- ASUS ROG Strix B650E-F Gaming WiFi
+- ASUS TUF Gaming B650E-Plus WiFi
+- Gigabyte B650E AORUS Master
+- Gigabyte X670 AORUS ELITE AX
+- MSI MAG X670E TOMAHAWK WIFI
+- Gigabyte B850M Eagle WiFi6E
+- ASRock B850 Steel Legend WiFi
+- MSI B850 Gaming Plus WiFi
+- Gigabyte B850 AORUS Elite WiFi7
+- Gigabyte X870 WiFi6
+- MSI X870 Gaming Plus WiFi
+- ASUS TUF Gaming X870-Plus WiFi
+- MSI X870E Gaming Plus WiFi
+- Gigabyte X870E AORUS Pro
+- ASUS ROG Strix X870E-E Gaming WiFi
+
+--- RAM (48 items) ---
+- TeamGroup T-Force Vulcan 8GB (1x8GB) DDR4 3200MHz Desktop Memory
+- G.Skill Ripjaws V 8GB (1x8GB) DDR4 3200MHz Desktop Memory
+- Kingston Fury Beast 8GB (1x8GB) DDR4 3200MHz Desktop Memory
+- Corsair Vengeance LPX 8GB (1x8GB) DDR4 3200MHz Desktop Memory
+- Lexar Thor 8GB (1x8GB) DDR4 3200MHz Desktop Memory
+- PNY XLR8 Gaming 8GB (1x8GB) DDR4 3200MHz Desktop Memory
+- TeamGroup T-Force Vulcan 16GB (1x16GB) DDR4 3200MHz Desktop Memory
+- G.Skill Ripjaws V 16GB (1x16GB) DDR4 3200MHz Desktop Memory
+- Kingston Fury Beast 16GB (1x16GB) DDR4 3200MHz Desktop Memory
+- Corsair Vengeance LPX 16GB (1x16GB) DDR4 3200MHz Desktop Memory
+- Lexar Thor 16GB (1x16GB) DDR4 3200MHz Desktop Memory
+- PNY XLR8 Gaming 16GB (1x16GB) DDR4 3200MHz Desktop Memory
+- TeamGroup T-Force Dark ZA 16GB (2x8GB) DDR4 3600MHz Desktop Memory
+- TeamGroup T-Force Delta RGB 16GB (2x8GB) DDR4 3600MHz Desktop Memory
+- G.Skill Ripjaws V 16GB (2x8GB) DDR4 3600MHz Desktop Memory
+- Corsair Vengeance LPX 16GB (2x8GB) DDR4 3600MHz Desktop Memory
+- Kingston Fury Beast 16GB (2x8GB) DDR4 3600MHz Desktop Memory
+- Lexar Thor 16GB (2x8GB) DDR4 3600MHz Desktop Memory
+- G.Skill Ripjaws V 32GB (2x16GB) DDR4 3600MHz Desktop Memory
+- Corsair Vengeance LPX 32GB (2x16GB) DDR4 3600MHz Desktop Memory
+- Kingston Fury Beast 32GB (2x16GB) DDR4 3600MHz Desktop Memory
+- TeamGroup T-Force Vulcan 32GB (2x16GB) DDR4 3600MHz Desktop Memory
+- Lexar Thor 32GB (2x16GB) DDR4 3600MHz Desktop Memory
+- PNY XLR8 Gaming EPIC-X RGB 32GB (2x16GB) DDR4 3600MHz Desktop Memory
+- Lexar Ares RGB 16GB (1x16GB) DDR5 6000MHz Desktop Memory
+- Kingston Fury Beast 16GB (1x16GB) DDR5 5600MHz Desktop Memory
+- TeamGroup T-Force Delta RGB 16GB (1x16GB) DDR5 6000MHz Desktop Memory
+- Corsair Vengeance 16GB (1x16GB) DDR5 5600MHz Desktop Memory
+- G.Skill Flare X5 16GB (1x16GB) DDR5 6000MHz Desktop Memory
+- PNY XLR8 Gaming 16GB (1x16GB) DDR5 5600MHz Desktop Memory
+- Lexar Ares RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory
+- Kingston Fury Beast RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory
+- TeamGroup T-Force Delta RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory
+- Corsair Vengeance RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory
+- G.Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory
+- PNY XLR8 Gaming EPIC-X RGB 32GB (2x16GB) DDR5 6000MHz Desktop Memory
+- G.Skill Trident Z5 Neo RGB 32GB (2x16GB) DDR5 6400MHz Desktop Memory
+- Corsair Dominator Titanium RGB 32GB (2x16GB) DDR5 7200MHz Desktop Memory
+- G.Skill Trident Z5 Royal Neo 32GB (2x16GB) DDR5 8000MHz Desktop Memory
+- Lexar Ares RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory
+- Kingston Fury Beast 64GB (2x32GB) DDR5 6000MHz Desktop Memory
+- Corsair Vengeance RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory
+- TeamGroup T-Force Delta RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory
+- G.Skill Trident Z5 Neo RGB 64GB (2x32GB) DDR5 6400MHz Desktop Memory
+- PNY XLR8 Gaming EPIC-X RGB 64GB (2x32GB) DDR5 6000MHz Desktop Memory
+- G.Skill Trident Z5 Neo RGB 96GB (2x48GB) DDR5 6400MHz Desktop Memory
+- Corsair Vengeance RGB 96GB (2x48GB) DDR5 6000MHz Desktop Memory
+- Kingston Fury Beast 96GB (2x48GB) DDR5 6000MHz Desktop Memory
+
+--- GPU (67 items) ---
+- MSI GeForce RTX 4060 Ventus 2X Black 8GB OC GDDR6
+- Gigabyte GeForce RTX 4060 Windforce OC 8GB GDDR6
+- ASUS Dual GeForce RTX 4060 OC Edition 8GB GDDR6
+- Zotac Gaming GeForce RTX 4060 8GB Twin Edge OC GDDR6
+- MSI GeForce RTX 4060 Ti Ventus 2X Black 8GB OC GDDR6
+- Gigabyte GeForce RTX 4060 Ti Windforce OC 8GB GDDR6
+- ASUS Dual GeForce RTX 4060 Ti OC Edition 8GB GDDR6
+- Palit GeForce RTX 4060 Ti Dual 8GB GDDR6
+- MSI GeForce RTX 4060 Ti Gaming X 16GB GDDR6
+- Gigabyte GeForce RTX 4060 Ti Gaming OC 16GB GDDR6
+- MSI GeForce RTX 4070 Ventus 3X 12GB OC GDDR6X
+- Gigabyte GeForce RTX 4070 Windforce OC 12GB GDDR6X
+- ASUS Dual GeForce RTX 4070 OC Edition 12GB GDDR6X
+- Zotac Gaming GeForce RTX 4070 Twin Edge OC 12GB GDDR6X
+- MSI GeForce RTX 4070 Super Ventus 3X 12GB OC GDDR6X
+- Gigabyte GeForce RTX 4070 Super Windforce OC 12GB GDDR6X
+- ASUS ROG Strix GeForce RTX 4070 Super OC 12GB GDDR6X
+- MSI GeForce RTX 4070 Ti Super Ventus 3X 16GB OC GDDR6X
+- Gigabyte GeForce RTX 4070 Ti Super Gaming OC 16GB GDDR6X
+- ASUS TUF Gaming GeForce RTX 4070 Ti Super OC 16GB GDDR6X
+- MSI GeForce RTX 4080 Super Ventus 3X 16GB OC GDDR6X
+- Gigabyte GeForce RTX 4080 Super Gaming OC 16GB GDDR6X
+- ASUS ROG Strix GeForce RTX 4080 Super OC 16GB GDDR6X
+- MSI GeForce RTX 4090 Gaming X Trio 24GB GDDR6X
+- Gigabyte GeForce RTX 4090 Gaming OC 24GB GDDR6X
+- ASUS ROG Strix GeForce RTX 4090 OC 24GB GDDR6X
+- Zotac Gaming GeForce RTX 5060 8GB AMP GDDR7
+- Gigabyte GeForce RTX 5060 Gaming OC 8GB GDDR7
+- Palit GeForce RTX 5060 Dual 8GB GDDR7
+- MSI GeForce RTX 5060 Ti Ventus 3X 16GB OC GDDR7
+- Gigabyte GeForce RTX 5060 Ti Windforce 16GB GDDR7
+- MSI GeForce RTX 5060 Ti Gaming Trio 16GB GDDR7
+- Zotac Gaming GeForce RTX 5070 12GB GDDR7 Twin Edge OC
+- Gigabyte GeForce RTX 5070 Gaming OC 12GB GDDR7
+- MSI GeForce RTX 5070 Gaming X Trio 12GB GDDR7
+- MSI GeForce RTX 5070 Ti Ventus 3X 16GB OC GDDR7
+- Gigabyte GeForce RTX 5070 Ti Gaming OC 16GB GDDR7
+- ASUS TUF Gaming GeForce RTX 5070 Ti OC 16GB GDDR7
+- Zotac Gaming GeForce RTX 5070 Ti 16GB AMP Extreme GDDR7
+- MSI GeForce RTX 5080 Gaming Trio 16GB GDDR7
+- Gigabyte GeForce RTX 5080 Gaming OC 16GB GDDR7
+- ASUS ROG Strix GeForce RTX 5080 OC 16GB GDDR7
+- MSI GeForce RTX 5090 Gaming Trio 32GB GDDR7
+- Gigabyte GeForce RTX 5090 Gaming OC 32GB GDDR7
+- ASUS ROG Strix GeForce RTX 5090 OC 32GB GDDR7
+- Sapphire Pulse AMD Radeon RX 7600 8GB GDDR6
+- MSI Radeon RX 7600 MECH 2X 8GB OC GDDR6
+- ASRock AMD Radeon RX 7600 Challenger 8GB OC GDDR6
+- Sapphire Pulse AMD Radeon RX 7700 XT 12GB GDDR6
+- MSI Radeon RX 7700 XT Gaming X Trio 12GB GDDR6
+- ASRock AMD Radeon RX 7700 XT Challenger 12GB OC GDDR6
+- Sapphire Pulse AMD Radeon RX 7800 XT 16GB GDDR6
+- MSI Radeon RX 7800 XT Gaming Trio 16GB GDDR6
+- ASRock AMD Radeon RX 7800 XT Phantom Gaming 16GB OC GDDR6
+- Sapphire Pulse AMD Radeon RX 7900 GRE 16GB GDDR6
+- MSI Radeon RX 7900 GRE Gaming Trio 16GB GDDR6
+- Sapphire Nitro+ AMD Radeon RX 7900 XT 20GB GDDR6
+- ASRock AMD Radeon RX 7900 XT Phantom Gaming 20GB OC GDDR6
+- Sapphire Nitro+ AMD Radeon RX 7900 XTX Vapor-X 24GB GDDR6
+- ASRock AMD Radeon RX 7900 XTX Phantom Gaming 24GB OC GDDR6
+- XFX Speedster MERC310 AMD Radeon RX 7900 XTX 24GB GDDR6
+- Sapphire Pure AMD Radeon RX 9070 Gaming OC 16GB GDDR6
+- ASUS Prime Radeon RX 9070 OC Edition 16GB GDDR6
+- MSI Radeon RX 9070 Gaming X 16GB GDDR6
+- Sapphire Pulse AMD Radeon RX 9070 XT Gaming 16GB GDDR6
+- ASUS TUF Gaming Radeon RX 9070 XT OC 16GB GDDR6
+- MSI Radeon RX 9070 XT Gaming X Trio 16GB GDDR6
+
+--- STORAGE (30 items) ---
+- Kingston NV2 500GB PCIe Gen4 NVMe M.2 2280 SSD
+- Lexar NM710 500GB PCIe Gen4 NVMe M.2 2280 SSD
+- Crucial P3 500GB PCIe Gen3 NVMe M.2 2280 SSD
+- WD Blue SN580 500GB PCIe Gen4 NVMe M.2 2280 SSD
+- Samsung 980 PRO 500GB PCIe Gen4 NVMe M.2 2280 SSD
+- TeamGroup MP44L 500GB PCIe Gen4 NVMe M.2 2280 SSD
+- Kingston NV2 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- Lexar NM790 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- Crucial P3 Plus 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD Blue SN5000 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- Samsung 990 EVO Plus 1TB PCIe Gen5 NVMe M.2 2280 SSD
+- Kingston KC3000 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- TeamGroup MP44 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD BLACK SN850X 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- Samsung 990 PRO 1TB PCIe Gen4 NVMe M.2 2280 SSD
+- Lexar NM790 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- Crucial P3 Plus 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD Blue SN5000 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- Samsung 990 EVO Plus 2TB PCIe Gen5 NVMe M.2 2280 SSD
+- Kingston KC3000 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD BLACK SN850X 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- Samsung 990 PRO 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- TeamGroup MP44 2TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD BLACK SN8100 2TB PCIe Gen5 NVMe M.2 2280 SSD
+- Crucial T500 4TB PCIe Gen4 NVMe M.2 2280 SSD
+- Samsung 990 PRO 4TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD BLACK SN850X 4TB PCIe Gen4 NVMe M.2 2280 SSD
+- Kingston KC3000 4TB PCIe Gen4 NVMe M.2 2280 SSD
+- WD BLACK SN8100 4TB PCIe Gen5 NVMe M.2 2280 SSD
+- Lexar NM790 4TB PCIe Gen4 NVMe M.2 2280 SSD
+
+--- COOLER (8 items) ---
+- Noctua NH-D15
+- DeepCool AK620
+- ID-COOLING SE-226-XT
+- Cooler Master Hyper 212
+- NZXT Kraken X63 280mm AIO
+- Corsair iCUE H150i Elite 360mm AIO
+- Arctic Liquid Freezer II 240mm AIO
+- DeepCool LS720 360mm AIO
+
+--- CASE (6 items) ---
+- NZXT H510 Flow
+- Corsair 4000D Airflow
+- Lian Li Lancool III
+- Fractal Design Pop Mini Air
+- NZXT H9 Flow
+- Cooler Master MasterBox Q300L
+
+--- PSU (6 items) ---
+- Corsair RM750e 80+ Gold
+- Seasonic Focus GX-850 80+ Gold
+- EVGA SuperNOVA 1000 G7 80+ Gold
+- Cooler Master MWE V2 650 80+ Bronze
+- Corsair RM1000x 80+ Gold
+- Seasonic Focus GM-550 80+ Gold
+
+--- FANS (6 items) ---
+- Arctic P12 PWM PST
+- Arctic P12 PWM PST Value Pack (5-Pack)
+- Corsair iCUE SP120 RGB ELITE
+- Corsair iCUE SP120 RGB ELITE 3-Pack
+- Noctua NF-A14 PWM
+- Lian Li UNI FAN SL120 V2 3-Pack
+
