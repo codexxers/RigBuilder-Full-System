@@ -6,6 +6,17 @@ An Android application that guides users through building a compatible PC, step-
 
 ## Version History
 
+### v3.0 — Home Screen Redesign & Navigation
+> *Transitioned from a single-screen config app to a full multi-section hub.*
+
+- **Global Drawer Navigation** — Wrapped the app in a `DrawerLayout` with a slide-out hamburger menu accessing all sections.
+- **Home Hub Screen** — New landing page with a "Featured Builds" auto-scrolling `ViewPager2` carousel (swipes infinitely) and big navigation buttons.
+- **Pre-Built PCs Section** — Browse a list of pre-configured PCs with a detail screen showing tier badges, specs, and specific styling.
+- **Parts List Viewer** — Repurposed the catalog into a global read-only library (hides "Add to Build" functionality when browsing outside of the configurator).
+- **Navigation Graph Update** — Expanded from linear (Build→Catalog→Performance) to a hub-and-spoke model starting at `HomeFragment`.
+
+---
+
 ### v1.0 — Initial Build (Jetpack Compose)
 > *The foundation of the app, built with Jetpack Compose.*
 
