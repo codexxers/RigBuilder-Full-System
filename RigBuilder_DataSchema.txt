@@ -1,0 +1,139 @@
+RigBuilder Parts Data Schema
+==============================
+This file contains the JSON schema (required fields) for adding new parts to the database.
+All parts are stored in app/src/main/assets/.
+
+--- CASES ---
+File: assets/cases.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - supportedFormFactors (Object[])
+  - maxGpuLengthMm (Int32)
+  - maxCpuCoolerHeightMm (Int32)
+  - maxPsuLengthMm (Int32)
+  - maxRadiatorSizeMm (Int32)
+  - totalFanSlots (Int32)
+  - includedFans (Int32)
+  - colorVariants (Object[])
+  - price (Decimal)
+  - imageUrls (String)
+
+--- COOLERS ---
+File: assets/coolers.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - type (String)
+  - supportedSockets (Object[])
+  - heightMm (Int32)
+  - radiatorSizeMm (Int32)
+  - fanSizeMm (Int32)
+  - tdpRating (Int32)
+  - price (Decimal)
+  - imageUrls (String)
+
+--- CPUS ---
+File: assets/cpus.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - socket (String)
+  - architecture (String)
+  - powerTier (String)
+  - supportedChipsets (Object[])
+  - cores (Int32)
+  - threads (Int32)
+  - baseClockGhz (Decimal)
+  - boostClockGhz (Decimal)
+  - tdp (Int32)
+  - integratedGraphics (String)
+  - price (Decimal)
+  - imageUrls (String)
+  - gamingTier (Int32)
+
+--- FANS ---
+File: assets/fans.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - sizeMm (Int32)
+  - quantity (Int32)
+  - airflowCfm (Decimal)
+  - noiseLevelDba (Decimal)
+  - rgbType (String)
+  - price (Decimal)
+  - imageUrls (String)
+
+--- GPUS ---
+File: assets/gpus.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - vramGb (Int32)
+  - lengthMm (Int32)
+  - thicknessSlots (Decimal)
+  - recommendedPsuWatts (Int32)
+  - tdp (Int32)
+  - price (Decimal)
+  - imageUrls (String)
+  - gamingTier (Int32)
+
+--- MOTHERBOARDS ---
+File: assets/motherboards.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - socket (String)
+  - chipset (String)
+  - formFactor (String)
+  - ramGeneration (String)
+  - ramSlots (Int32)
+  - maxRamSpeedMhz (Int32)
+  - m2Slots (Int32)
+  - sataSlots (Int32)
+  - vrmTier (String)
+  - price (Decimal)
+  - imageUrls (String)
+
+--- PSUS ---
+File: assets/psus.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - wattage (Int32)
+  - efficiency (String)
+  - modularity (String)
+  - lengthMm (Int32)
+  - price (Decimal)
+  - imageUrls (String)
+
+--- RAMS ---
+File: assets/rams.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - generation (String)
+  - capacityGb (Int32)
+  - speedMhz (Int32)
+  - latency (String)
+  - modules (Int32)
+  - colorVariants (Object[])
+  - price (Decimal)
+  - imageUrls (String)
+
+--- STORAGES ---
+File: assets/storages.json
+  - id (Int32)
+  - name (String)
+  - brand (String)
+  - type (String)
+  - capacityGb (Int32)
+  - readSpeedMbps (Int32)
+  - writeSpeedMbps (Int32)
+  - formFactor (String)
+  - capacityVariants (Object[])
+  - price (Decimal)
+  - imageUrls (String)
+
+

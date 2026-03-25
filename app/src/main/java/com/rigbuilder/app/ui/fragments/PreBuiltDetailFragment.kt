@@ -134,7 +134,9 @@ class PreBuiltDetailFragment : Fragment() {
             findNavController().navigate(R.id.action_prebuilt_detail_to_build)
         }
         binding.btnCheckPerformance.setOnClickListener {
-            Toast.makeText(requireContext(), "Performance Check — Coming soon!", Toast.LENGTH_SHORT).show()
+            buildViewModel.resetBuild()
+            buildViewModel.loadPreBuilt(preBuilt)
+            findNavController().navigate(R.id.action_prebuilt_detail_to_performance)
         }
     }
 

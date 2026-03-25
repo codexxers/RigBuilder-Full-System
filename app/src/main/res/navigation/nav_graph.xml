@@ -81,6 +81,10 @@
         <action
             android:id="@+id/action_prebuilt_detail_to_build"
             app:destination="@id/buildFragment" />
+
+        <action
+            android:id="@+id/action_prebuilt_detail_to_performance"
+            app:destination="@id/performanceFragment" />
             
     </fragment>
     
