@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rig_black"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar with burger menu -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/rig_black"
+        android:elevation="0dp"
+        app:navigationIconTint="@color/rig_white"
+        app:titleTextColor="@color/rig_white" />
+
+    <!-- Scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Welcome Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Welcome to RigBuilder!"
+                android:textColor="@color/rig_white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:letterSpacing="0.01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                android:text="What would you like to do?"
+                android:textColor="@color/rig_gray"
+                android:textSize="14sp" />
+
+            <!-- Featured Pre-Built Carousel -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Featured Builds"
+                android:textColor="@color/rig_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/featured_pager"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:clipToPadding="false"
+                android:clipChildren="false" />
+
+            <!-- Dot indicators + Next button row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="24dp">
+
+                <LinearLayout
+                    android:id="@+id/dot_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_next_card"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Next ›"
+                    android:textColor="@color/rig_red"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:minWidth="0dp"
+                    android:paddingHorizontal="12dp" />
+
+            </LinearLayout>
+
+            <!-- Section buttons -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="12dp"
+                android:text="Browse"
+                android:textColor="@color/rig_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Build A PC -->
+            <LinearLayout
+                android:id="@+id/btn_build_pc"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/home_card_bg"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Build A PC"
+                        android:textColor="@color/rig_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick every component yourself"
+                        android:textColor="@color/rig_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="@color/rig_red"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Configurable Pre-Built PCs -->
+            <LinearLayout
+                android:id="@+id/btn_prebuilt"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/home_card_bg"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Configurable Pre-Built PCs"
+                        android:textColor="@color/rig_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Browse ready-made configurations"
+                        android:textColor="@color/rig_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="@color/rig_red"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Parts List -->
+            <LinearLayout
+                android:id="@+id/btn_parts_list"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/home_card_bg"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Parts List"
+                        android:textColor="@color/rig_white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Browse all available components"
+                        android:textColor="@color/rig_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="@color/rig_red"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Laptops (placeholder) -->
+            <LinearLayout
+                android:id="@+id/btn_laptops"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/home_card_bg"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:alpha="0.6">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laptops"
+                            android:textColor="@color/rig_white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/home_card_bg"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="2dp"
+                            android:text="Coming Soon"
+                            android:textColor="@color/rig_red"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laptop recommendations"
+                        android:textColor="@color/rig_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="@color/rig_gray"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

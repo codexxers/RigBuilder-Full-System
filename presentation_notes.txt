@@ -1,0 +1,25 @@
+Section 1: The Core Building Experience
+
+Note 1: Step-by-Step Guided Build Flow. The application provides a logical, sequential process for picking PC parts. The exact sequence is: CPU -> Motherboard -> RAM -> GPU -> Storage -> Cooler -> Case -> Power Supply (PSU) -> Case Fans.
+Note 2: Optional GPU Step. If a user selects a processor with an integrated graphics card (like AMD G-suffix CPUs), the dedicated GPU selection step smartly becomes optional.
+Note 3: Variant Selection and Customization. Users can select specific part variants such as RAM colors, storage capacities, and PC case colors directly from dropdown menus. 
+Note 4: Fan Quantity Picker. The app features a smart quantity picker for case fans, calculating the maximum number of fans you can add based on the available fan slots in the chosen PC case.
+
+Section 2: Smart Compatibility Engine and Warnings
+
+Note 5: Automatic Compatibility Filtering. As the user builds, the app automatically filters components to ensure they work together by matching CPU sockets, motherboard chipsets, RAM types, and motherboard form factors.
+Note 6: Physical Clearance Checks. The system actively checks physical measurements to warn users if their chosen GPU is too long for the selected PC case, or if the CPU cooler height lacks clearance.
+Note 7: Power Supply Warnings. The app calculates the total power draw of the components and provides an immediate warning if the chosen power supply's wattage is underpowered for the build.
+Note 8: VRM Synergy Ratings. The app specifically evaluates the pairing between the CPU and the Motherboard's power delivery system (VRM) to ensure system stability, labeling synergy from "Excellent" to "Not Advised".
+
+Section 3: Performance Analysis and Game Verification
+
+Note 9: The "Can I Run It?" Performance Screen. This feature analyzes the chosen CPU and GPU combination to display a synergy percentage circle, actively detecting potential system bottlenecks and offering upgrade advice.
+Note 10: Game Compatibility Cards. It displays visual requirement bars to show if the built PC meets the minimum CPU, GPU, and RAM requirements for popular modern games (like Cyberpunk 2077, Valorant, and GTA V).
+Note 11: Detailed Component Spec Sheets. Users can pull up a full specification sheet for any individual component, categorized neatly into General Information, Performance, Compatibility, and Pricing details.
+
+Section 4: User Interface, Search, and Offline Capability
+
+Note 12: Filtering, Sorting, and Search. The app includes a robust text search and a filter panel to quickly browse components by brand checkboxes, price range sliders, and ascending/descending sorting.
+Note 13: Premium Visual Design. The application provides a highly polished experience with a sleek dark theme, a stylised header, high-quality component thumbnails, and real game cover images.
+Note 14: Comprehensive Offline Local Database. The app is powered by an extensive, pre-loaded local database of PC parts and game requirements, allowing the app to function quickly and completely offline without internet delays.

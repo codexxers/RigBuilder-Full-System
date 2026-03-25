@@ -82,7 +82,7 @@ class FullSpecBottomSheet : BottomSheetDialogFragment() {
         // Variants
         val variants = getVariants(data)
         val hasVariants = variants.isNotEmpty()
-        if (hasVariants) {
+        if (hasVariants && !isReadOnly) {
             variantContainer.visibility = View.VISIBLE
             variantContainer.removeAllViews()
             val variantLabel = getVariantLabel(data)
@@ -94,6 +94,10 @@ class FullSpecBottomSheet : BottomSheetDialogFragment() {
         } else {
             variantContainer.visibility = View.GONE
             btnAdd.isEnabled = true
+        }
+        
+        if (isReadOnly) {
+            btnAdd.visibility = View.GONE
         }
 
         // Full specs
@@ -259,6 +263,8 @@ class FullSpecBottomSheet : BottomSheetDialogFragment() {
         else -> emptyList()
     }
 
+    private var isReadOnly: Boolean = false
+
     companion object {
         fun newInstance(
             item: Any,
@@ -269,6 +275,18 @@ class FullSpecBottomSheet : BottomSheetDialogFragment() {
                 this.item = item
                 this.category = category
                 this.buildViewModel = buildViewModel
+                this.isReadOnly = false
+            }
+        }
+
+        fun newInstanceReadOnly(
+            item: Any,
+            category: ComponentCategory
+        ): FullSpecBottomSheet {
+            return FullSpecBottomSheet().apply {
+                this.item = item
+                this.category = category
+                this.isReadOnly = true
             }
         }
     }

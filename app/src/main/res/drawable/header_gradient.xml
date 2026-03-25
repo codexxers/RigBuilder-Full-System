@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Dark gradient base -->
+    <!-- Light gradient base -->
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="#FF0D0D0D"
-                android:centerColor="#FF110508"
-                android:endColor="#FF1A0305"
+                android:startColor="#FFFFFFFF"
+                android:centerColor="#FFFAFAFA"
+                android:endColor="#FFF5F5F5"
                 android:angle="180" />
         </shape>
     </item>
-    <!-- Subtle red glow at bottom edge -->
+    <!-- Subtle pink glow at bottom edge -->
     <item android:top="52dp">
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="#00880808"
-                android:endColor="#44880808"
+                android:startColor="#00FFD1DC"
+                android:endColor="#44FFD1DC"
                 android:angle="270" />
         </shape>
     </item>

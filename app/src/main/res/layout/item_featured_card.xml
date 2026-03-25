@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/rig_surface"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background gradient overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/featured_card_gradient" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="bottom">
+
+            <!-- Tier badge -->
+            <TextView
+                android:id="@+id/card_tier_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/home_card_bg"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:text="Mid-Range"
+                android:textColor="@color/rig_red"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <!-- PC Name -->
+            <TextView
+                android:id="@+id/card_pc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Solid Performance Build"
+                android:textColor="@color/rig_white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium" />
+
+            <!-- Spec blurb -->
+            <TextView
+                android:id="@+id/card_spec_blurb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Ryzen 5 5600 · RTX 3060 · 16GB RAM"
+                android:textColor="@color/rig_gray"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/card_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="₱ --,---"
+                android:textColor="@color/rig_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

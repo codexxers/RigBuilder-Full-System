@@ -1,43 +1,43 @@
 <resources>
     <!-- Primary Brand Colors -->
-    <color name="rig_red">#FF880808</color>
-    <color name="rig_red_dark">#FF5C0404</color>
-    <color name="rig_red_light">#FFAA2020</color>
-    <color name="rig_red_glow">#33880808</color>
+    <color name="rig_red">#FFD1DC</color>
+    <color name="rig_red_dark">#E5BBC6</color>
+    <color name="rig_red_light">#FFE5EC</color>
+    <color name="rig_red_glow">#40FFD1DC</color>
 
     <!-- Backgrounds -->
-    <color name="rig_black">#FF000000</color>
-    <color name="rig_surface">#FF0D0D0D</color>
-    <color name="rig_surface_variant">#FF1A1A1A</color>
-    <color name="rig_card">#FF111111</color>
-    <color name="rig_card_elevated">#FF181818</color>
+    <color name="rig_black">#F5F5F5</color>
+    <color name="rig_surface">#FFFFFF</color>
+    <color name="rig_surface_variant">#EBEBEB</color>
+    <color name="rig_card">#FFFFFF</color>
+    <color name="rig_card_elevated">#FAFAFA</color>
 
     <!-- Text -->
-    <color name="rig_white">#FFFAF9F6</color>
-    <color name="rig_gray">#FFA0A0A0</color>
-    <color name="rig_gray_dark">#FF606060</color>
-    <color name="rig_gray_light">#FFD0D0D0</color>
+    <color name="rig_white">#111111</color>
+    <color name="rig_gray">#666666</color>
+    <color name="rig_gray_dark">#444444</color>
+    <color name="rig_gray_light">#AAAAAA</color>
 
     <!-- Status Colors -->
-    <color name="rig_green">#FF2E7D32</color>
-    <color name="rig_yellow">#FFE6B800</color>
-    <color name="rig_orange">#FFE65100</color>
+    <color name="rig_green">#2E7D32</color>
+    <color name="rig_yellow">#E6B800</color>
+    <color name="rig_orange">#E65100</color>
 
     <!-- Synergy Colors -->
-    <color name="synergy_excellent">#FF2E7D32</color>
-    <color name="synergy_good">#FF558B2F</color>
-    <color name="synergy_adequate">#FFE6B800</color>
-    <color name="synergy_not_advised">#FF880808</color>
+    <color name="synergy_excellent">#2E7D32</color>
+    <color name="synergy_good">#558B2F</color>
+    <color name="synergy_adequate">#E6B800</color>
+    <color name="synergy_not_advised">#E53935</color>
 
     <!-- Gradient -->
-    <color name="gradient_red_start">#FF880808</color>
-    <color name="gradient_red_end">#FF5C0404</color>
+    <color name="gradient_red_start">#FFD1DC</color>
+    <color name="gradient_red_end">#E5BBC6</color>
 
     <!-- Error -->
-    <color name="error_red">#FFE53935</color>
-    <color name="error_bg">#FF0A0A0A</color>
+    <color name="error_red">#E53935</color>
+    <color name="error_bg">#FFEBEB</color>
 
     <!-- Misc -->
-    <color name="outline_variant">#FF2A2A2A</color>
+    <color name="outline_variant">#DDDDDD</color>
     <color name="scrim">#CC000000</color>
 </resources>

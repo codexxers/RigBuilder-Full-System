@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rig_black"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/rig_surface"
+        app:navigationIconTint="@color/rig_white"
+        app:titleTextColor="@color/rig_white" />
+
+    <!-- Scrollable detail content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- PC Name + Tier -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/detail_pc_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Solid Performance Build"
+                    android:textColor="@color/rig_white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-medium" />
+
+                <TextView
+                    android:id="@+id/detail_tier_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_card_bg"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="Mid-Range"
+                    android:textColor="@color/rig_red"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="₱ --,---"
+                android:textColor="@color/rig_red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- 3 Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <!-- Full Spec -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_full_spec"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:text="Full Spec"
+                    android:textSize="12sp"
+                    app:strokeColor="@color/rig_red"
+                    app:cornerRadius="10dp" />
+
+                <!-- Configure Build -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_configure"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:text="Configure"
+                    android:textSize="12sp"
+                    app:strokeColor="@color/rig_gray"
+                    app:cornerRadius="10dp" />
+
+                <!-- Check Performance -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_check_performance"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:text="Performance"
+                    android:textSize="12sp"
+                    app:strokeColor="@color/rig_gray"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout>
+
+            <!-- Full Spec expandable panel -->
+            <LinearLayout
+                android:id="@+id/full_spec_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@color/rig_surface"
+                android:padding="16dp">
+
+                <!-- Spec rows are inflated here dynamically -->
+                <LinearLayout
+                    android:id="@+id/spec_rows_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

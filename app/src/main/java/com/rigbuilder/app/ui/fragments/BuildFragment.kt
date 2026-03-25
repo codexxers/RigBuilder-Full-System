@@ -59,7 +59,14 @@ class BuildFragment : Fragment() {
     }
 
     private fun setupToolbar() {
-        binding.toolbar.title = ""
+        binding.toolbar.setNavigationIcon(R.drawable.ic_menu_burger)
+        binding.toolbar.setNavigationOnClickListener {
+            (requireActivity() as? androidx.appcompat.app.AppCompatActivity)
+                ?.let { activity ->
+                    val drawer = activity.findViewById<androidx.drawerlayout.widget.DrawerLayout>(R.id.drawer_layout)
+                    drawer?.openDrawer(androidx.core.view.GravityCompat.START)
+                }
+        }
     }
 
     private fun setupRecyclerView() {

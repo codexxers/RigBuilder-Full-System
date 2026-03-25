@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_build"
+        android:title="Build A PC" />
+
+    <item
+        android:id="@+id/nav_prebuilt"
+        android:title="Pre-Built PCs" />
+
+    <item
+        android:id="@+id/nav_parts_list"
+        android:title="Parts List" />
+
+    <item
+        android:id="@+id/nav_laptops"
+        android:title="Laptops" />
+
+</menu>

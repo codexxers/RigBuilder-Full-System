@@ -32,7 +32,8 @@ data class ComponentItem(
 
 class ComponentAdapter(
     private val onAddClick: (Any, String?) -> Unit,
-    private val onFullSpec: (Any) -> Unit
+    private val onFullSpec: (Any) -> Unit,
+    private val isReadOnly: Boolean = false
 ) : ListAdapter<ComponentItem, ComponentAdapter.ViewHolder>(DiffCallback()) {
 
     private val pesoFmt = NumberFormat.getCurrencyInstance(Locale("en", "PH"))
@@ -71,6 +72,12 @@ class ComponentAdapter(
         holder.variantDropdown.onItemClickListener = null
         (holder.variantContainer as ViewGroup).removeAllViews()
         holder.variantContainer.visibility = View.GONE
+        
+        if (isReadOnly) {
+            holder.btnAdd.visibility = View.GONE
+        } else {
+            holder.btnAdd.visibility = View.VISIBLE
+        }
 
         // Set category thumbnail
         holder.thumb.imageTintList = null // Remove tint so images show in color
