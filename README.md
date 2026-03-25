@@ -1,6 +1,8 @@
 # RigBuilder — Smart PC Configurator
 
-An Android application that guides users through building a compatible PC, step-by-step. It enforces compatibility between components, calculates CPU–GPU synergy, and evaluates game performance.
+An Android application that serves as a comprehensive PC building companion. It features a **Home Hub** with a **Featured Pre-Built PC carousel**, a global **Parts List catalog**, and a **Smart PC Configurator**. 
+
+The Configurator guides users through building a custom PC step-by-step, enforcing hardware compatibility between components, calculating CPU–GPU synergy, and evaluating ultimate game performance.
 
 ---
 
