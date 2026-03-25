@@ -12,7 +12,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/rig_surface"
+        android:elevation="0dp"
+        android:background="@color/rig_black"
         app:navigationIconTint="@color/rig_white"
         app:title="Parts List"
         app:titleTextColor="@color/rig_white" />

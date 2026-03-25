@@ -251,6 +251,56 @@ class BuildViewModel(private val repository: ComponentRepository) : ViewModel() 
         _buildState.update { BuildState() }
     }
 
+    /**
+     * Pre-fill the build with components matching the given PreBuiltData names.
+     * Queries the repository DIRECTLY (not filtered flows) so all parts are available.
+     */
+    fun loadPreBuilt(preBuilt: com.rigbuilder.app.model.PreBuiltData) {
+        viewModelScope.launch {
+            // Fetch ALL components from DB in parallel — bypass the filtered flows
+            val allCpus = repository.getAllCpus().first()
+            val allMobos = repository.getAllMotherboards().first()
+            val allRams = repository.getAllRams().first()
+            val allGpus = repository.getAllGpus().first()
+            val allStorages = repository.getAllStorages().first()
+            val allCoolers = repository.getAllCoolers().first()
+            val allCases = repository.getAllCases().first()
+            val allPsus = repository.getAllPsus().first()
+            val allFans = repository.getAllFans().first()
+
+            // Match by name
+            val cpu = allCpus.firstOrNull { it.name == preBuilt.cpu }
+            val mobo = allMobos.firstOrNull { it.name == preBuilt.motherboard }
+            val ram = allRams.firstOrNull { it.name == preBuilt.ram }
+            val gpu = allGpus.firstOrNull { it.name == preBuilt.gpu }
+            val storage = allStorages.firstOrNull { it.name == preBuilt.storage }
+            val cooler = allCoolers.firstOrNull { it.name == preBuilt.cooler }
+            val case_ = allCases.firstOrNull { it.name == preBuilt.case_ }
+            val psu = allPsus.firstOrNull { it.name == preBuilt.psu }
+            val fan = allFans.firstOrNull { it.name == preBuilt.fans }
+
+            // Set the entire build in one atomic update
+            _buildState.update {
+                BuildState(
+                    selectedCpu = cpu,
+                    selectedMotherboard = mobo,
+                    selectedMotherboardSynergy = null, // synergy recalculates in UI
+                    selectedRam = ram,
+                    selectedRamVariant = ram?.colorVariants?.firstOrNull(),
+                    selectedGpu = gpu,
+                    selectedStorage = storage,
+                    selectedStorageVariant = storage?.capacityVariants?.firstOrNull(),
+                    selectedCooler = cooler,
+                    selectedCase = case_,
+                    selectedCaseVariant = case_?.colorVariants?.firstOrNull(),
+                    selectedPsu = psu,
+                    selectedFan = fan,
+                    selectedFanQuantity = fan?.quantity ?: 0
+                )
+            }
+        }
+    }
+
     // ── Factory ─────────────────────────────────────────────────
     class Factory(private val repository: ComponentRepository) : ViewModelProvider.Factory {
         @Suppress("UNCHECKED_CAST")

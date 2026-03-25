@@ -1,9 +1,9 @@
 <resources>
     <!-- Primary Brand Colors -->
-    <color name="rig_red">#FFD1DC</color>
-    <color name="rig_red_dark">#E5BBC6</color>
-    <color name="rig_red_light">#FFE5EC</color>
-    <color name="rig_red_glow">#40FFD1DC</color>
+    <color name="rig_red">#E91E63</color>
+    <color name="rig_red_dark">#C2185B</color>
+    <color name="rig_red_light">#F48FB1</color>
+    <color name="rig_red_glow">#40E91E63</color>
 
     <!-- Backgrounds -->
     <color name="rig_black">#F5F5F5</color>
@@ -30,8 +30,8 @@
     <color name="synergy_not_advised">#E53935</color>
 
     <!-- Gradient -->
-    <color name="gradient_red_start">#FFD1DC</color>
-    <color name="gradient_red_end">#E5BBC6</color>
+    <color name="gradient_red_start">#F48FB1</color>
+    <color name="gradient_red_end">#E91E63</color>
 
     <!-- Error -->
     <color name="error_red">#E53935</color>

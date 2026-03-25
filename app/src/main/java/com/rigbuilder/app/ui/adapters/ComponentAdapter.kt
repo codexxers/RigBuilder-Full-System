@@ -84,11 +84,13 @@ class ComponentAdapter(
         val thumbRes = when (data) {
             is CpuEntity -> R.drawable.thumb_cpu
             is MotherboardWithSynergy -> R.drawable.thumb_motherboard
+            is MotherboardEntity -> R.drawable.thumb_motherboard
             is RamEntity -> R.drawable.thumb_ram
             is GpuEntity -> R.drawable.thumb_gpu
             is StorageEntity -> R.drawable.thumb_storage
             is CoolerEntity -> R.drawable.thumb_cooler
             is CaseCompatibility -> R.drawable.thumb_case
+            is CaseEntity -> R.drawable.thumb_case
             is PsuEntity -> R.drawable.thumb_psu
             is FanEntity -> R.drawable.thumb_cooler // reuse cooler image for fans
             else -> 0
@@ -142,6 +144,18 @@ class ComponentAdapter(
                 } else {
                     holder.warning.visibility = View.GONE
                 }
+            }
+            is MotherboardEntity -> {
+                holder.name.text = data.name
+                holder.brand.text = data.brand
+                holder.price.text = pesoFmt.format(data.price)
+                addSpecs(holder, listOf(
+                    "Chipset" to data.chipset.name,
+                    "Form Factor" to data.formFactor.name,
+                    "RAM" to "${data.ramGeneration.name} (${data.ramSlots} slots)",
+                    "VRM" to data.vrmTier.name
+                ))
+                holder.warning.visibility = View.GONE
             }
             is RamEntity -> {
                 holder.name.text = data.name
@@ -227,6 +241,17 @@ class ComponentAdapter(
                     selectedVariant = variant
                     holder.btnAdd.isEnabled = initEnabled
                 }
+            }
+            is CaseEntity -> {
+                holder.name.text = data.name
+                holder.brand.text = data.brand
+                holder.price.text = pesoFmt.format(data.price)
+                addSpecs(holder, listOf(
+                    "GPU Clearance" to "${data.maxGpuLengthMm}mm",
+                    "Cooler Clear." to "${data.maxCpuCoolerHeightMm}mm",
+                    "Fan Slots" to "${data.totalFanSlots} (${data.includedFans} included)"
+                ))
+                holder.warning.visibility = View.GONE
             }
             is PsuEntity -> {
                 holder.name.text = data.name

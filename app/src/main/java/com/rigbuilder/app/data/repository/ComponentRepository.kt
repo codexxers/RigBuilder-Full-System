@@ -122,6 +122,13 @@ class ComponentRepository(private val db: AppDatabase) {
     // ── Fans ────────────────────────────────────────────────────
     fun getAllFans(): Flow<List<FanEntity>> = db.fanDao().getAll()
 
+    // ── Unfiltered access (for Parts List browser) ──────────────
+    fun getAllMotherboards(): Flow<List<MotherboardEntity>> = db.motherboardDao().getAll()
+    fun getAllRams(): Flow<List<RamEntity>> = db.ramDao().getAll()
+    fun getAllCoolers(): Flow<List<CoolerEntity>> = db.coolerDao().getAll()
+    fun getAllCases(): Flow<List<CaseEntity>> = db.caseDao().getAll()
+    fun getAllPsus(): Flow<List<PsuEntity>> = db.psuDao().getAll()
+
     // ── Games ───────────────────────────────────────────────────
     fun getAllGames(): Flow<List<GameEntity>> = db.gameDao().getAll()
 

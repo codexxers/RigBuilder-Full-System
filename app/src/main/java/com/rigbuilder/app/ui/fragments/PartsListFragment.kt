@@ -6,39 +6,34 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.PopupMenu
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.chip.Chip
 import com.rigbuilder.app.R
 import com.rigbuilder.app.RigBuilderApp
 import com.rigbuilder.app.data.entity.*
-import com.rigbuilder.app.data.repository.CaseCompatibility
-import com.rigbuilder.app.data.repository.MotherboardWithSynergy
+import com.rigbuilder.app.data.repository.ComponentRepository
 import com.rigbuilder.app.databinding.FragmentPartsListBinding
 import com.rigbuilder.app.model.ComponentCategory
 import com.rigbuilder.app.ui.adapters.ComponentAdapter
 import com.rigbuilder.app.ui.adapters.ComponentItem
-import com.rigbuilder.app.viewmodel.BuildViewModel
-import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch
-import java.text.NumberFormat
-import java.util.Locale
 
 class PartsListFragment : Fragment() {
 
     private var _binding: FragmentPartsListBinding? = null
     private val binding get() = _binding!!
-    private lateinit var buildViewModel: BuildViewModel
+    private lateinit var repository: ComponentRepository
     private lateinit var adapter: ComponentAdapter
-    private val pesoFmt = NumberFormat.getCurrencyInstance(Locale("en", "PH"))
 
     private var allItems: List<Any> = emptyList()
     private var selectedCategory: ComponentCategory? = null
     private var searchQuery = ""
+    private var sortAscending: Boolean? = null // null = no sort, true = asc, false = desc
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -51,10 +46,7 @@ class PartsListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val app = requireActivity().application as RigBuilderApp
-        buildViewModel = ViewModelProvider(
-            requireActivity(),
-            BuildViewModel.Factory(app.repository)
-        )[BuildViewModel::class.java]
+        repository = app.repository
 
         setupToolbar()
         setupSearch()
@@ -72,6 +64,34 @@ class PartsListFragment : Fragment() {
                     drawer?.openDrawer(androidx.core.view.GravityCompat.START)
                 }
         }
+        // Sort button in toolbar
+        binding.toolbar.inflateMenu(R.menu.menu_parts_list)
+        binding.toolbar.setOnMenuItemClickListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.action_sort -> {
+                    showSortMenu()
+                    true
+                }
+                else -> false
+            }
+        }
+    }
+
+    private fun showSortMenu() {
+        val anchor = binding.toolbar.findViewById<View>(R.id.action_sort) ?: binding.toolbar
+        val popup = PopupMenu(requireContext(), anchor)
+        popup.menu.add(0, 1, 0, "Price: Low to High")
+        popup.menu.add(0, 2, 1, "Price: High to Low")
+        popup.menu.add(0, 3, 2, "Default")
+        popup.setOnMenuItemClickListener { item ->
+            when (item.itemId) {
+                1 -> { sortAscending = true; applyFilters(); true }
+                2 -> { sortAscending = false; applyFilters(); true }
+                3 -> { sortAscending = null; applyFilters(); true }
+                else -> false
+            }
+        }
+        popup.show()
     }
 
     private fun setupSearch() {
@@ -86,13 +106,18 @@ class PartsListFragment : Fragment() {
     }
 
     private fun setupCategoryChips() {
+        binding.categoryChipGroup.removeAllViews()
+
         // "All" chip
         val allChip = Chip(requireContext()).apply {
             text = "All"
             isCheckable = true
             isChecked = true
+            setChipBackgroundColorResource(R.color.rig_surface)
+            setTextColor(resources.getColor(R.color.rig_white, null))
             setOnClickListener {
                 selectedCategory = null
+                updateChipSelection(this)
                 applyFilters()
             }
         }
@@ -102,8 +127,11 @@ class PartsListFragment : Fragment() {
             val chip = Chip(requireContext()).apply {
                 text = cat.displayName
                 isCheckable = true
+                setChipBackgroundColorResource(R.color.rig_surface)
+                setTextColor(resources.getColor(R.color.rig_white, null))
                 setOnClickListener {
                     selectedCategory = cat
+                    updateChipSelection(this)
                     applyFilters()
                 }
             }
@@ -111,8 +139,14 @@ class PartsListFragment : Fragment() {
         }
     }
 
+    private fun updateChipSelection(selected: Chip) {
+        for (i in 0 until binding.categoryChipGroup.childCount) {
+            val chip = binding.categoryChipGroup.getChildAt(i) as? Chip
+            chip?.isChecked = (chip == selected)
+        }
+    }
+
     private fun setupRecyclerView() {
-        // Read-only mode: no onAddClick action, full spec only
         adapter = ComponentAdapter(
             onAddClick = { _, _ -> /* read-only, no-op */ },
             onFullSpec = { data -> showFullSpec(data) },
@@ -124,38 +158,24 @@ class PartsListFragment : Fragment() {
 
     private fun observeData() {
         viewLifecycleOwner.lifecycleScope.launch {
-            buildViewModel.cpus.map { it as List<Any> }
-                .collect { cpuList ->
-                    // Collect all category data and merge
-                }
-        }
-
-        viewLifecycleOwner.lifecycleScope.launch {
-            // Collect all components across categories
-            val flows = listOf(
-                buildViewModel.cpus.map { it as List<Any> },
-                buildViewModel.motherboards.map { it as List<Any> },
-                buildViewModel.rams.map { it as List<Any> },
-                buildViewModel.gpus.map { it as List<Any> },
-                buildViewModel.storages.map { it as List<Any> },
-                buildViewModel.coolers.map { it as List<Any> },
-                buildViewModel.cases.map { it as List<Any> },
-                buildViewModel.psus.map { it as List<Any> },
-                buildViewModel.fans.map { it as List<Any> }
-            )
-
-            // Observe each category and aggregate
-            buildViewModel.cpus.collectLatest { cpus ->
+            combine(
+                repository.getAllCpus(),
+                repository.getAllMotherboards(),
+                repository.getAllRams(),
+                repository.getAllGpus(),
+                repository.getAllStorages(),
+                repository.getAllCoolers(),
+                repository.getAllCases(),
+                repository.getAllPsus(),
+                repository.getAllFans()
+            ) { arrays ->
                 val merged = mutableListOf<Any>()
-                merged.addAll(cpus)
-                merged.addAll(buildViewModel.motherboards.value)
-                merged.addAll(buildViewModel.rams.value)
-                merged.addAll(buildViewModel.gpus.value)
-                merged.addAll(buildViewModel.storages.value)
-                merged.addAll(buildViewModel.coolers.value)
-                merged.addAll(buildViewModel.cases.value)
-                merged.addAll(buildViewModel.psus.value)
-                merged.addAll(buildViewModel.fans.value)
+                arrays.forEach { list ->
+                    @Suppress("UNCHECKED_CAST")
+                    merged.addAll(list as List<Any>)
+                }
+                merged
+            }.collect { merged ->
                 allItems = merged
                 applyFilters()
             }
@@ -163,12 +183,21 @@ class PartsListFragment : Fragment() {
     }
 
     private fun applyFilters() {
-        val filtered = allItems.filter { item ->
+        var filtered = allItems.filter { item ->
             val matchesSearch = searchQuery.isBlank() ||
                 getName(item).contains(searchQuery, ignoreCase = true)
             val matchesCategory = selectedCategory == null ||
                 getCategory(item) == selectedCategory
             matchesSearch && matchesCategory
+        }
+
+        // Apply price sorting
+        if (sortAscending != null) {
+            filtered = if (sortAscending == true) {
+                filtered.sortedBy { getPrice(it) }
+            } else {
+                filtered.sortedByDescending { getPrice(it) }
+            }
         }
 
         val componentItems = filtered.mapIndexed { idx, data ->
@@ -182,12 +211,12 @@ class PartsListFragment : Fragment() {
 
     private fun getName(item: Any): String = when (item) {
         is CpuEntity -> item.name
-        is MotherboardWithSynergy -> item.motherboard.name
+        is MotherboardEntity -> item.name
         is RamEntity -> item.name
         is GpuEntity -> item.name
         is StorageEntity -> item.name
         is CoolerEntity -> item.name
-        is CaseCompatibility -> item.case.name
+        is CaseEntity -> item.name
         is PsuEntity -> item.name
         is FanEntity -> item.name
         else -> ""
@@ -195,25 +224,38 @@ class PartsListFragment : Fragment() {
 
     private fun getCategory(item: Any): ComponentCategory? = when (item) {
         is CpuEntity -> ComponentCategory.CPU
-        is MotherboardWithSynergy -> ComponentCategory.MOTHERBOARD
+        is MotherboardEntity -> ComponentCategory.MOTHERBOARD
         is RamEntity -> ComponentCategory.RAM
         is GpuEntity -> ComponentCategory.GPU
         is StorageEntity -> ComponentCategory.STORAGE
         is CoolerEntity -> ComponentCategory.COOLER
-        is CaseCompatibility -> ComponentCategory.CASE
+        is CaseEntity -> ComponentCategory.CASE
         is PsuEntity -> ComponentCategory.PSU
         is FanEntity -> ComponentCategory.FAN
         else -> null
     }
 
+    private fun getPrice(item: Any): Double = when (item) {
+        is CpuEntity -> item.price
+        is MotherboardEntity -> item.price
+        is RamEntity -> item.price
+        is GpuEntity -> item.price
+        is StorageEntity -> item.price
+        is CoolerEntity -> item.price
+        is CaseEntity -> item.price
+        is PsuEntity -> item.price
+        is FanEntity -> item.price
+        else -> 0.0
+    }
+
     private fun getItemId(item: Any, fallback: Int): Long = when (item) {
         is CpuEntity -> item.id.toLong()
-        is MotherboardWithSynergy -> item.motherboard.id.toLong()
+        is MotherboardEntity -> item.id.toLong()
         is RamEntity -> item.id.toLong()
         is GpuEntity -> item.id.toLong()
         is StorageEntity -> item.id.toLong()
         is CoolerEntity -> item.id.toLong()
-        is CaseCompatibility -> item.case.id.toLong()
+        is CaseEntity -> item.id.toLong()
         is PsuEntity -> item.id.toLong()
         is FanEntity -> item.id.toLong()
         else -> fallback.toLong()

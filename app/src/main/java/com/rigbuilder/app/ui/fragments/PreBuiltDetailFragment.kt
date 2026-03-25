@@ -10,9 +10,14 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.rigbuilder.app.R
+import com.rigbuilder.app.RigBuilderApp
 import com.rigbuilder.app.databinding.FragmentPrebuiltDetailBinding
 import com.rigbuilder.app.model.PreBuiltData
+import com.rigbuilder.app.model.PreBuiltRepository
+import com.rigbuilder.app.viewmodel.BuildViewModel
 import java.text.NumberFormat
 import java.util.Locale
 
@@ -21,13 +26,7 @@ class PreBuiltDetailFragment : Fragment() {
     private var _binding: FragmentPrebuiltDetailBinding? = null
     private val binding get() = _binding!!
     private val pesoFmt = NumberFormat.getCurrencyInstance(Locale("en", "PH"))
-
-    private val allPreBuilts = listOf(
-        PreBuiltData("pb_001", "Entry Performer", "Budget", 28000, "AMD Ryzen 5 5500", "NVIDIA GTX 1650", "16GB DDR4 3200MHz", "500GB NVMe SSD", "Seasonic B12-550", "Deepcool CC560", 5, 3, 2, 2),
-        PreBuiltData("pb_002", "Solid Performance Build", "Mid-Range", 55000, "AMD Ryzen 5 5600", "NVIDIA RTX 3060", "16GB DDR4 3600MHz", "1TB NVMe SSD", "Corsair CV650", "NZXT H510", 6, 6, 3, 3),
-        PreBuiltData("pb_003", "Power House", "Mid-Range", 80000, "Intel Core i7-12700K", "NVIDIA RTX 3070 Ti", "32GB DDR5 5200MHz", "2TB NVMe SSD", "Seasonic Focus GX-750", "Fractal Meshify C", 8, 8, 4, 4),
-        PreBuiltData("pb_004", "Ultimate Rig", "High-End", 145000, "AMD Ryzen 9 7900X", "NVIDIA RTX 4080", "32GB DDR5 6000MHz", "2TB Gen4 NVMe SSD", "Corsair HX1000 80+ Platinum", "Lian Li O11 Dynamic", 10, 10, 5, 5)
-    )
+    private lateinit var buildViewModel: BuildViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -39,8 +38,14 @@ class PreBuiltDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val app = requireActivity().application as RigBuilderApp
+        buildViewModel = ViewModelProvider(
+            requireActivity(),
+            BuildViewModel.Factory(app.repository)
+        )[BuildViewModel::class.java]
+
         val prebuiltId = arguments?.getString("prebuilt_id")
-        val preBuilt = allPreBuilts.find { it.id == prebuiltId } ?: allPreBuilts[0]
+        val preBuilt = PreBuiltRepository.findById(prebuiltId ?: "") ?: PreBuiltRepository.allPreBuilts[0]
 
         setupToolbar(preBuilt.name)
         bindDetail(preBuilt)
@@ -63,12 +68,13 @@ class PreBuiltDetailFragment : Fragment() {
         binding.detailPcName.text = preBuilt.name
         binding.detailTierBadge.text = preBuilt.tier
         binding.detailPrice.text = pesoFmt.format(preBuilt.price.toDouble())
+        binding.detailDescription.text = preBuilt.description
         buildSpecRows(preBuilt)
     }
 
     private fun buildSpecRows(preBuilt: PreBuiltData) {
         binding.specRowsContainer.removeAllViews()
-        val specs = listOf(
+        val specs = mutableListOf(
             "CPU" to preBuilt.cpu,
             "GPU" to preBuilt.gpu,
             "RAM" to preBuilt.ram,
@@ -76,6 +82,10 @@ class PreBuiltDetailFragment : Fragment() {
             "PSU" to preBuilt.psu,
             "Case" to preBuilt.case_
         )
+        if (preBuilt.motherboard.isNotBlank()) specs.add(2, "Board" to preBuilt.motherboard)
+        if (preBuilt.cooler.isNotBlank()) specs.add("Cooler" to preBuilt.cooler)
+        if (preBuilt.fans.isNotBlank()) specs.add("Fans" to preBuilt.fans)
+
         specs.forEach { (label, value) ->
             val row = LinearLayout(requireContext()).apply {
                 orientation = LinearLayout.HORIZONTAL
@@ -117,7 +127,11 @@ class PreBuiltDetailFragment : Fragment() {
             binding.btnFullSpec.text = if (specExpanded) "Hide Spec" else "Full Spec"
         }
         binding.btnConfigure.setOnClickListener {
-            Toast.makeText(requireContext(), "Configure Build — Coming soon!", Toast.LENGTH_SHORT).show()
+            // Reset the build and load this pre-built's components
+            buildViewModel.resetBuild()
+            buildViewModel.loadPreBuilt(preBuilt)
+            // Navigate to the Build screen
+            findNavController().navigate(R.id.action_prebuilt_detail_to_build)
         }
         binding.btnCheckPerformance.setOnClickListener {
             Toast.makeText(requireContext(), "Performance Check — Coming soon!", Toast.LENGTH_SHORT).show()
@@ -131,3 +145,4 @@ class PreBuiltDetailFragment : Fragment() {
         _binding = null
     }
 }
+

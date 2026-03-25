@@ -12,7 +12,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/rig_surface"
+        android:elevation="0dp"
+        android:background="@color/rig_black"
         app:navigationIconTint="@color/rig_white"
         app:titleTextColor="@color/rig_white" />
 
@@ -121,6 +122,17 @@
                     app:cornerRadius="10dp" />
 
             </LinearLayout>
+
+            <!-- Build Description (always visible) -->
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textColor="@color/rig_gray"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
 
             <!-- Full Spec expandable panel -->
             <LinearLayout

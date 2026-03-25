@@ -213,6 +213,13 @@ class FullSpecBottomSheet : BottomSheetDialogFragment() {
             "Power" to listOf("VRM Tier" to item.motherboard.vrmTier.name, "VRM Synergy" to item.synergy.label),
             "Pricing" to listOf("Price" to pesoFmt.format(item.motherboard.price))
         )
+        is MotherboardEntity -> listOf(
+            "General" to listOf("Brand" to item.brand, "Name" to item.name, "Socket" to item.socket.name, "Chipset" to item.chipset.name, "Form Factor" to item.formFactor.name),
+            "Memory" to listOf("RAM Generation" to item.ramGeneration.name, "RAM Slots" to "${item.ramSlots}", "Max RAM Speed" to "${item.maxRamSpeedMhz} MHz"),
+            "Storage" to listOf("M.2 Slots" to "${item.m2Slots}", "SATA Slots" to "${item.sataSlots}"),
+            "Power" to listOf("VRM Tier" to item.vrmTier.name),
+            "Pricing" to listOf("Price" to pesoFmt.format(item.price))
+        )
         is RamEntity -> listOf(
             "General" to listOf("Brand" to item.brand, "Name" to item.name, "Generation" to item.generation.name),
             "Performance" to listOf("Capacity" to "${item.capacityGb}GB", "Modules" to "${item.modules}", "Speed" to "${item.speedMhz} MHz", "Latency" to item.latency),

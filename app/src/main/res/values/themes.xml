@@ -15,7 +15,7 @@
         <!-- Background & Surface -->
         <item name="android:colorBackground">@color/rig_black</item>
         <item name="colorOnBackground">@color/rig_white</item>
-        <item name="colorSurface">@color/rig_surface</item>
+        <item name="colorSurface">@color/rig_black</item>
         <item name="colorOnSurface">@color/rig_white</item>
         <item name="colorSurfaceVariant">@color/rig_surface_variant</item>
         <item name="colorOnSurfaceVariant">@color/rig_gray</item>

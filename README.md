@@ -8,6 +8,35 @@ The Configurator guides users through building a custom PC step-by-step, enforci
 
 ## Version History
 
+### v4.0 — Pre-Built Expansion, Configure Build & UI Overhaul
+> *Major expansion of pre-built PCs, functional Configure button, Parts List browser, and visual refresh.*
+
+#### Pre-Built PCs
+- **7 Pre-Built Configurations** — Centralized in `PreBuiltRepository.kt` as the single source of truth
+- **Tier System** — Entry → Mid-Range → High-End → Extreme (no Budget tier)
+- **Database-Verified Parts** — Every component name exactly matches JSON seed data
+- **Accurate Pricing** — Each build's price is the exact sum of its DB part prices
+- **Gamer Descriptions** — 2-3 sentence persuasive marketing copy for each build
+- **Full Spec Detail View** — Shows description always visible, full specs toggled below
+- **RAM Minimum** — All builds start at 16GB; progression: 16GB DDR4 → 16-32GB DDR5 → 32-64GB DDR5 → 96GB DDR5
+
+#### Configure Build
+- **Functional Configure Button** — Tapping "Configure" on any pre-built navigates to the Build screen with all 9 parts pre-filled
+- **Direct Repository Query** — Bypasses filtered StateFlows; queries `getAll()` flows directly via `.first()` for reliable component matching
+
+#### Parts List Browser
+- **All 9 Categories** — CPU, Motherboard, RAM, GPU, Storage, Cooler, Case, PSU, Fan
+- **Category Filter Chips** — Material Chips to filter by component type; "All" shows everything
+- **Price Sorting** — Ascending/Descending via toolbar menu
+
+#### UI & Visual
+- **Seamless Toolbars** — All toolbar backgrounds match page background (#F5F5F5), elevation set to 0dp
+- **Color Rebrand** — Accent color changed from light pink (#FFD1DC) to vibrant pink (#E91E63)
+- **Featured Card Spacing** — Increased margins for better visual breathing room
+- **New Model Fields** — `PreBuiltData` now includes `motherboard`, `cooler`, `fans`, and `description`
+
+---
+
 ### v3.0 — Home Screen Redesign & Navigation
 > *Transitioned from a single-screen config app to a full multi-section hub.*
 
@@ -213,15 +242,17 @@ RigBuilder/
 │   │   │   ├── DatabaseSeeder.kt
 │   │   │   └── Converters.kt
 │   │   ├── model/
-│   │   │   └── Enums.kt         # SocketType, Chipset, ComponentCategory, etc.
+│   │   │   ├── Enums.kt         # SocketType, Chipset, ComponentCategory, etc.
+│   │   │   ├── PreBuiltData.kt  # Pre-built PC data model
+│   │   │   └── PreBuiltRepository.kt  # Central pre-built configurations
 │   │   ├── repository/
 │   │   │   └── ComponentRepository.kt
 │   │   ├── viewmodel/
 │   │   │   ├── BuildViewModel.kt
 │   │   │   └── PerformanceViewModel.kt
 │   │   └── ui/
-│   │       ├── fragments/       # BuildFragment, CatalogFragment, PerformanceFragment, FullSpecBottomSheet
-│   │       ├── adapters/        # BuildStepAdapter, ComponentAdapter, GameAdapter
+│   │       ├── fragments/       # Home, Build, Catalog, PreBuilt, PreBuiltDetail, PartsList, Performance, FullSpecBottomSheet
+│   │       ├── adapters/        # BuildStepAdapter, ComponentAdapter, GameAdapter, PreBuiltAdapter, FeaturedCardAdapter
 │   │       └── theme/Color.kt
 │   └── res/
 │       ├── layout/              # 14+ XML layouts
